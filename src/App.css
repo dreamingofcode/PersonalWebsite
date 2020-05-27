@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-color: rgb(120, 104, 123);
+  color: white;
+  min-height: fit-content;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -7,6 +11,61 @@
   pointer-events: none;
 }
 
+.mydiv {
+  animation-duration: 4s;
+  animation-name: my-animation;
+  animation-iteration-count: 1;
+  animation-direction: right;
+  
+}
+.about{
+  background-color:  #8898b6;
+
+}
+#gifs-rows img {
+  cursor: pointer;
+}
+#gifs-rows .gif-file {
+  display:none;
+}
+@keyframes my-animation {
+  0% {
+    left: -800px;
+    top: 250px;
+  }
+  25% {
+    left: -300px;
+    top: 100px;
+  }
+  50% {
+    left: 300px;
+    top: 110px;
+  }
+  75% {
+    left: 0px;
+    top: -250px;
+  }
+}
+.landing{
+  margin-top: 2px;
+  margin-right: -00px;
+  margin-bottom: -200px;
+background-image: url(https://media.giphy.com/media/3oz8xDp5mAEOAZXEPe/giphy.gif);
+background-position: center;
+background-repeat: no-repeat;
+/* border:palevioletred solid 10px; */
+width:900px;
+height: 300px;
+}
+
+.about-intro{
+background-image: url("https://media.giphy.com/media/hTZqITHNkgmX0fwt1C/giphy.gif");
+background-repeat: no-repeat;
+background-size:cover;
+background-position: 0px;
+
+height: 500px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -15,11 +74,11 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
