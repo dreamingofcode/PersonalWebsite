@@ -4,7 +4,6 @@ import { withRouter } from 'react-router';
 
 import { Link } from 'react-router-dom';
 import me from '../assets/pictures/me.jpg';
-import black from '../assets/pictures/black.png';
 import FadeIn from 'react-fade-in';
 
 var GifPlayer = require('react-gif-player');

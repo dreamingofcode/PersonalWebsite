@@ -32,11 +32,11 @@ const WatchList = () => {
               href="https://github.com/dreamingofcode/Astro-Connect"
               target="_blank"
             >
-              <h5 style={{ marginRight: '50px', color: 'black' }}>Github</h5>
+              <h5 style={{ marginRight: '187px', color: 'black' }}>Github</h5>
             </a>
-            <a href="https://astr-connection.herokuapp.com/" target="_blank">
+            {/* <a href="https://astr-connection.herokuapp.com/" target="_blank">
               <h5 style={{ marginRight: '50px', color: 'black' }}>Heroku</h5>
-            </a>
+            </a> */}
             <a
               href="https://youtu.be/g3UhHl7c57s"
               target="_blank"

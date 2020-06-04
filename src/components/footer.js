@@ -42,7 +42,7 @@ const Footers = () => {
           </FooterDropDownSection>
           <FooterDropDownSection title="Email">
             <FooterLinkList>
-              <a href="#"><i class="fas fa-envelope-square fa-5x"></i></a>
+              <a href="mailto:cesarmota922@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-5x"></i></a>
             </FooterLinkList>
           </FooterDropDownSection>
         </FooterSection>
