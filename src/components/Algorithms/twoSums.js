@@ -19,10 +19,12 @@ const TwoSums = (props) => {
   const [result, setResult] = useState([]);
   // const [sourceImage, setSourceImage] = useState();
   const handleChange = (event) => {
-    props.setSourceCodeTitle("Two Sums")
-    props.setSourceImage(twoSumSource)
     const input = event.target.value;
     event.target.name === 'array' ? setArray(input) : setTargetSum(input);
+  };
+  const handleChangeForm = (event) => {
+    props.setSourceCodeTitle("Two Sums")
+    props.setSourceImage(twoSumSource)
   };
   //start with first number on the array, check if the sum adds up to sum total, if no, check the second number and so forth until done looping
 
@@ -53,7 +55,7 @@ const TwoSums = (props) => {
               margin: 'auto',
               marginBottom: '100px',
             }}
-            onMouseOver={handleChange}
+            onMouseOver={handleChangeForm}
           >
             <CardTitle
               style={{

@@ -50,7 +50,7 @@ const Contact = () => {
             phone="12"
             tablet={12}
           >
-            <form name="contact" method="POST" data-netlify="true">
+            <form  method="POST" data-netlify="true">
               <div className="fields">
                 <div className="field half">
                   {/* <label>
@@ -86,21 +86,21 @@ const Contact = () => {
                     ></textarea>
                   {/* </label> */}
                 </div>
-                <div className="field">
+                {/* <div className="field"> */}
                   {/* <label>
                     Message:{' '} */}
-                    <input
+                    {/* <input
                       type="file"
                       name="myfile"
                       id="myfile"
                       placeholder="Upload File"
                       rows="7"
-                    />
+                    /> */}
                   {/* </label> */}
-                </div>
+                {/* </div> */}
                 <div className="field">
                   <div data-netlify-recaptcha="true">
-                    <h1>j</h1>
+                    
                   </div>
                 </div>
 
