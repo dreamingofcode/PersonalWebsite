@@ -1,30 +1,74 @@
 import React from 'react';
 
-const handleSubmit=( event ) =>{
+const handleSubmit = (event) => {
   event.preventDefault();
   console.log(this.state);
-}
+};
 const Contact = () => {
-  
   return (
     <div>
-      <form></form>
       <h1>Contact!</h1>
-      <form id="contact-form" onSubmit={()=>{handleSubmit()}} method="POST">
-    <div className="form-group">
-        <label htmlFor="name">Name</label>
-        <input type="text" className="form-control" />
-    </div>
-    <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Email address</label>
-        <input type="email" className="form-control" aria-describedby="emailHelp" />
-    </div>
-    <div className="form-group">
-        <label htmlFor="message">Message</label>
-        <textarea className="form-control" rows="5"></textarea>
-    </div>
-    <button type="submit" className="btn btn-primary">Submit</button>
-</form>
+      <form name="contact" method="POST" data-netlify="true">
+        <div className="fields">
+          <div className="field half">
+            {/* <p> */}
+            <label>
+              Your Name:{' '}
+              <input type="text" name="name" id="name" placeholder="Name" />
+            </label>
+            {/* </p> */}
+          </div>
+          <div className="field half">
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" id="email" placeholder="Email" />
+            </label>
+          </p>
+          </div>
+          {/* <p>
+            <label>
+              Your Role:{' '}
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select>
+            </label>
+          </p> */}
+          <div className="field">
+            <p>
+              <label>
+                Message:{' '}
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  rows="7"
+                ></textarea>
+              </label>
+            </p>
+          </div>
+          <div className="field">
+            {/* <p> */}
+            <label>
+              Message:{' '}
+              <input
+                type="file"
+                name="myfile"
+                id="myfile"
+                placeholder="Upload File"
+                rows="7"
+              ></input>
+            </label>
+            {/* </p> */}
+          </div>
+          <div className="field">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </div>
+      </form>
     </div>
   );
 };
