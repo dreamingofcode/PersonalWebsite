@@ -12,7 +12,7 @@ const Contact = () => {
         <FadeIn transitionDuration="7800">
           <h2
             style={{
-               marginBottom: '-110px',
+              marginBottom: '-110px',
               // marginTop: '-550px',
               marginLeft: '-580px',
             }}
@@ -47,65 +47,56 @@ const Contact = () => {
             <form name="contact" method="POST" data-netlify="true">
               <div className="fields">
                 <div className="field half">
-                  {/* <p> */}
-                  <label>
-                    Your Name:{' '}
+                  {/* <label>
+                    Your Name:{' '} */}
                     <input
                       type="text"
                       name="name"
                       id="name"
                       placeholder="Name"
                     />
-                  </label>
-                  {/* </p> */}
+                  {/* </label> */}
                 </div>
                 <div className="field half">
-                  <p>
-                    <label>
-                      Your Email:{' '}
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                      />
-                    </label>
-                  </p>
+                  {/* <label>
+                    Your Email:{' '} */}
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  {/* </label> */}
                 </div>
 
                 <div className="field">
-                  <p>
-                    <label>
-                      Message:{' '}
-                      <textarea
-                        name="message"
-                        id="message"
-                        placeholder="Message"
-                        rows="7"
-                      ></textarea>
-                    </label>
-                  </p>
+                  {/* <label>
+                    Message:{' '} */}
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Message"
+                      rows="7"
+                    ></textarea>
+                  {/* </label> */}
                 </div>
                 <div className="field">
-                  {/* <p> */}
-                  <label>
-                    Message:{' '}
+                  {/* <label>
+                    Message:{' '} */}
                     <input
                       type="file"
                       name="myfile"
                       id="myfile"
                       placeholder="Upload File"
                       rows="7"
-                    ></input>
-                  </label>
-                  {/* </p> */}
+                    />
+                  {/* </label> */}
                 </div>
                 <div className="field">
                   <div data-netlify-recaptcha="true"></div>
                 </div>
-                <p>
-                  <button type="submit">Send</button>
-                </p>
+
+                <button type="submit">Send</button>
               </div>
             </form>
           </Cell>
