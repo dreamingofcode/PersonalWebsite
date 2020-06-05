@@ -10,20 +10,25 @@ const Contact = () => {
       <FadeIn transitionDuration="1800">
         <h1>Contact!</h1>
         <FadeIn transitionDuration="7800">
-          <h2
-            style={{
-              marginBottom: '-110px',
-              // marginTop: '-550px',
-              marginLeft: '-580px',
-            }}
-          >
-            Hello!
-          </h2>
+        
         </FadeIn>
         <Grid>
           <Cell col={3}>
-            <img src={contactAvatar} alt="cesar's avatar" height="400px" />
-            <FadeIn transitionDuration="7800">
+            <FadeIn transitionDuration="11800">
+              <h2
+                style={{
+                  marginBottom: '-90px',
+                  // marginTop: '-550px',
+                  marginLeft: '330px',
+                }}
+              >
+                Hello!
+              </h2>
+            </FadeIn>
+            <FadeIn transitionDuration="1800">
+              <img src={contactAvatar} alt="cesar's avatar" height="400px" />
+            </FadeIn>
+            <FadeIn transitionDuration="11800">
               <img
                 src={textBox}
                 alt="textbox"
@@ -37,6 +42,7 @@ const Contact = () => {
               />
             </FadeIn>
           </Cell>
+
           <Cell
             offset={0}
             className="contactForm"
@@ -44,7 +50,7 @@ const Contact = () => {
             phone="12"
             tablet={12}
           >
-            <form name="contact" method="POST" data-netlify="true">
+            <form  method="POST" data-netlify="true">
               <div className="fields">
                 <div className="field half">
                   {/* <label>
@@ -80,20 +86,22 @@ const Contact = () => {
                     ></textarea>
                   {/* </label> */}
                 </div>
-                <div className="field">
+                {/* <div className="field"> */}
                   {/* <label>
                     Message:{' '} */}
-                    <input
+                    {/* <input
                       type="file"
                       name="myfile"
                       id="myfile"
                       placeholder="Upload File"
                       rows="7"
-                    />
+                    /> */}
                   {/* </label> */}
-                </div>
+                {/* </div> */}
                 <div className="field">
-                  <div data-netlify-recaptcha="true"></div>
+                  <div data-netlify-recaptcha="true">
+                    
+                  </div>
                 </div>
 
                 <button type="submit">Send</button>
