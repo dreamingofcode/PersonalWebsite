@@ -50,7 +50,8 @@ const Contact = () => {
             phone="12"
             tablet={12}
           >
-            <form  method="POST" data-netlify="true">
+            <form  method="POST" name="contact">
+            <input type="hidden" name="form-name" value="contact" />
               <div className="fields">
                 <div className="field half">
                   {/* <label>
