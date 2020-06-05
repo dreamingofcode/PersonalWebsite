@@ -10,15 +10,7 @@ const Contact = () => {
       <FadeIn transitionDuration="1800">
         <h1>Contact!</h1>
         <FadeIn transitionDuration="7800">
-          <h2
-            style={{
-              marginBottom: '-110px',
-              // marginTop: '-550px',
-              marginLeft: '-580px',
-            }}
-          >
-            Hello!
-          </h2>
+        
         </FadeIn>
         <Grid>
           <Cell col={3}>
