@@ -25,15 +25,14 @@ const WelcomePage = () => {
   const [isShownBlog, setIsShownBlog] = useState(blogPreset);
   const [isShownAlgo, setIsShownAlgo] = useState(algoPreset);
   return (
-    <div>
+    <div className="about">
       <FadeIn transitionDuration="1800">
-        <h1 className="">Welcome to my Porfolio Page!</h1>
-        <Grid>
-          <Cell col={8} offset="2">
-            <h5 style={{ marginTop: '-30px' }}>
+          <Cell col={8} offset="2"  >
+        <h1 style={{paddingTop:"70px"}} >Welcome!</h1>
+            <h5 style={{ marginBottom: '50px' }}>
               Hello and welcome to my Personal Website! I am a full-stack
               software engineer currently living in the city of Chicago! I am
-              currently available for freelance work and I am also seeking a
+            available for both freelance work and also for a
               permanent position within a collaborative and exiciting team! I am
               heavily invested in my personal development and so I seek any
               great opportunity which will allow me to showcase and strengthen
@@ -41,7 +40,8 @@ const WelcomePage = () => {
               optomistic. Reach out!
             </h5>
           </Cell>
-
+  <div className="abot"  style={{marginTop:"30px"}}>
+        <Grid >
           <Cell col={6} tablet={12} offset="">
             <div
               onMouseEnter={() => {
@@ -80,16 +80,15 @@ const WelcomePage = () => {
                   colored
                   raised
                   ripple
-                  onClick={() => {
-                    this.context.history.push('/About');
-                  }}
+                  
                 > */}
                   <Link to="/about">Learn More</Link>
 
                   {/* </Button> */}
                 </CardActions>
                 <CardMenu style={{ color: '#fff' }}>
-                  <IconButton name="share" />
+    
+                  {/* <IconButton name="share" /> */}
                 </CardMenu>
               </Card>
             </div>
@@ -137,7 +136,7 @@ ${isShownPorfolio} )`,
                   {/* </Button> */}
                 </CardActions>
                 <CardMenu style={{ color: '#fff' }}>
-                  <IconButton name="share" />
+                  {/* <IconButton name="share" /> */}
                 </CardMenu>
               </Card>{' '}
             </div>
@@ -180,7 +179,7 @@ ${isShownPorfolio} )`,
                   {/* </Button> */}
                 </CardActions>
                 <CardMenu style={{ color: '#fff' }}>
-                  <IconButton name="share" />
+                  {/* <IconButton name="share" /> */}
                 </CardMenu>
               </Card>{' '}
             </div>
@@ -208,7 +207,7 @@ ${isShownPorfolio} )`,
                   Algorithms
                 </CardTitle>
                 <CardText>
-                  To enhance and imporve my skills in data-structures, I deploy
+                  To enhance and improve my skills in data-structures, I deploy
                   a new algorithm problem every week on my site!
                 </CardText>
                 <CardActions border>
@@ -217,12 +216,13 @@ ${isShownPorfolio} )`,
                   {/* </Button> */}
                 </CardActions>
                 <CardMenu style={{ color: '#fff' }}>
-                  <IconButton name="share" />
+                  {/* <IconButton name="share" /> */}
                 </CardMenu>
               </Card>{' '}
             </div>
           </Cell>
         </Grid>{' '}
+          </div>
       </FadeIn>
     </div>
   );

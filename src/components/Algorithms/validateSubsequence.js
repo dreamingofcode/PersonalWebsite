@@ -10,36 +10,39 @@ import {
   IconButton,
   Button,
 } from 'react-mdl';
-import twoSumSource from '../../assets/algorithms/2sum(n).png'
 import SourceCodeModal from './sourceCode';
 
-const TwoSums = (props) => {
+const ValidateSubsequence = (props) => {
   const [array, setArray] = useState();
   const [targetSum, setTargetSum] = useState();
   const [result, setResult] = useState([]);
-  // const [sourceImage, setSourceImage] = useState();
+
   const handleChange = (event) => {
-    props.setSourceCodeTitle("Two Sums")
-    props.setSourceImage(twoSumSource)
+    props.setSourceCodeTitle("Validate Subsequence")
+ props.setSourceImage('https://media.giphy.com/media/l0MYO6VesS7Hc1uPm/giphy.gif')
     const input = event.target.value;
     event.target.name === 'array' ? setArray(input) : setTargetSum(input);
+    console.log(array, targetSum);
   };
   //start with first number on the array, check if the sum adds up to sum total, if no, check the second number and so forth until done looping
 
   const handleTwoSums = (event, array, targetSum) => {
     event.preventDefault();
     const nums = {};
-    const answer=[]
+    const answer = [];
     for (let i = 0; array.length > i; i++) {
       const match = targetSum - array[i];
       if (match in nums) {
-        answer.push([match, parseInt(array[i])] )
+        answer.push([match, parseInt(array[i])]);
+        console.log(answer);
+
+        // setResult("[" + [match, array[i]] + "]");
+        // return [match, array[i]];
       } else {
-        nums[array[i]] = false;  
-         
+        nums[array[i]] = false;
       }
     }
-    setResult( '['+ `${answer[0]}`+ ']' +','+ '['+ answer[1]+']');
+    setResult('[' + `${answer[0]}` + ']' + ',' + '[' + answer[1] + ']');
     return [];
   };
   return (
@@ -60,19 +63,19 @@ const TwoSums = (props) => {
                 color: '#fff',
                 height: '176px',
                 background:
-                  'url(https://media.giphy.com/media/3ohzgD1wRxpvpkDCSI/giphy.gif) center / cover',
+                  'url(https://media.giphy.com/media/3oz8xxk2FeG62l12Tu/giphy.gif) center / cover',
               }}
             >
-              <h1>Two-Number Sum!</h1>
+              <h1>Validate Sequence!</h1>
             </CardTitle>
 
             <CardText>
               <p>
-                This Algorithm takes in any array of numbers, positive or
-                negative, and a desired target sum and will check for pairs
-                which will generate the sum.
+                This Algorithm takes in two arrays, a regular numbers array and
+                a sequential numbers array, and will determine if the regular
+                array includes the numbers of the sequential array in order.
               </p>
-          
+
               <form
                 onSubmit={(event) => {
                   handleTwoSums(event, array, targetSum);
@@ -80,26 +83,25 @@ const TwoSums = (props) => {
               >
                 <input
                   type="text"
-                  placeholder="Array with Brackets"
+                  placeholder="Regular Array"
+                  name="array"
+                  onChange={handleChange}
+                  value={array}
+                ></input>
+                <input
+                  type="text"
+                  placeholder="Sequential Array"
                   name="array"
                   onChange={handleChange}
                   value={array}
                 ></input>
 
-                <input
-                  type="text"
-                  placeholder="Target Sum"
-                  name="targetSum"
-                  onChange={handleChange}
-                  value={targetSum}
-                ></input>
-
                 <input type="submit"></input>
               </form>
-             <h4>{result}</h4> 
+              <h4>{result}</h4>
             </CardText>
             <CardActions>
-              <SourceCodeModal  source={props.sourceImage} title={props.sourceCodeTitle}/>
+              <SourceCodeModal source={props.sourceImage} title={props.sourceCodeTitle}/>
             </CardActions>
           </Card>
         </Cell>
@@ -107,4 +109,4 @@ const TwoSums = (props) => {
     </div>
   );
 };
-export default TwoSums;
+export default ValidateSubsequence;

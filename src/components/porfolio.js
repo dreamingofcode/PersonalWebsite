@@ -9,7 +9,7 @@ const Porfolio = () => {
   return (
     <React.Fragment>
       <FadeIn transitionDuration="1800">
-        <h1>Porfolio</h1>
+        <h1>Project Portfolio</h1>
         <Grid>
           <AstroConnection />
           <WatchList />
