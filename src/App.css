@@ -67,6 +67,15 @@ background-position: 0px;
 
 height: 500px;
 }
+
+.contactForm{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  
+  /* background-color: coral; */
+  width: 200px;
+  
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
