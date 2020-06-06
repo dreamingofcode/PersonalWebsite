@@ -11,7 +11,9 @@ const Contact = () => {
         <h1>Contact Me!</h1>
         <Cell col={8} offset="2">
           <h5 style={{ marginTop: '-10px', marginBottom: '80px' }}>
-          You can Find hyperlinks to my social media accounts and my resume down below. For a faster response , I can be reached via telephone at (773)-664-5734 
+            You can Find hyperlinks to my social media accounts and my resume
+            down below. For a faster response , I can be reached via telephone
+            at (773)-664-5734
           </h5>
         </Cell>
         <Grid
@@ -20,7 +22,7 @@ const Contact = () => {
             backgroundColor: 'white',
             color: 'black',
             paddingTop: '80px',
-            paddingBottom:"80px"
+            paddingBottom: '80px',
           }}
         >
           <Cell col={3} phone={12} tablet={12}>
@@ -89,8 +91,6 @@ const Contact = () => {
                 </div>
 
                 <div className="field">
-                  {/* <label>
-                    Message:{' '} */}
                   <textarea
                     name="message"
                     id="message"
@@ -98,7 +98,6 @@ const Contact = () => {
                     rows="7"
                     style={{ width: '400px' }}
                   ></textarea>
-                  {/* </label> */}
                 </div>
                 <div className="field">
                   <label>
