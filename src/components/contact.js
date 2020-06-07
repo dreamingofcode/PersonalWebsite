@@ -70,7 +70,7 @@ const Contact = () => {
                     id="name"
                     placeholder="Name"
                     style={{
-                      width: '400px',
+                      // width: '400px',
                       marginBottom: '30px',
                       height: '35px',
                     }}
@@ -83,7 +83,7 @@ const Contact = () => {
                     id="email"
                     placeholder="Email"
                     style={{
-                      width: '400px',
+                      // width: '400px',
                       marginBottom: '30px',
                       height: '35px',
                     }}
@@ -96,7 +96,7 @@ const Contact = () => {
                     id="message"
                     placeholder="Message"
                     rows="7"
-                    style={{ width: '400px' }}
+                    // style={{ width: '400px' }}
                   ></textarea>
                 </div>
                 <div className="field">

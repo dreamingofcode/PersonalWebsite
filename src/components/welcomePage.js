@@ -27,7 +27,7 @@ const WelcomePage = () => {
   return (
     <div className="about">
       <FadeIn transitionDuration="1800">
-        <Cell col={8} phone={1} tablet={6} offsetDesktop={2} offsetTablet={1}>
+        <Cell col={8} phone={12} tablet={12} offsetDesktop={2} offsetTablet={1}>
           <h1 style={{ paddingTop: '70px' }}>Welcome!</h1>
           <h5 style={{ marginBottom: '50px' }}>
             Hello and welcome to my Personal Website! I am a full-stack software

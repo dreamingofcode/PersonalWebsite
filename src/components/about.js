@@ -33,23 +33,24 @@ const About = () => {
               </h5>
             </div>
           </Cell>
-          <Cell col={12} tablet={1} offsetTablet={1} phone={12}>
+          <Cell col={12} tablet={1} offsetTablet={1} phone={12} offsetPhone={0}>
             <div style={{ marginTop: '60px' }}>
               <i
                 class="fab fa-js-square fa-7x"
-                style={{ marginLeft: '100px',marginBottom:"40px" }}
+                style={{ marginLeft: '00px',marginBottom:"40px" }}
               ></i>
-              <i class="fab fa-react fa-7x" style={{ marginLeft: '100px',marginBottom:"40px"  }}></i>
-              <i class="fab fa-html5 fa-7x" style={{ marginLeft: '100px',marginBottom:"40px"  }}></i>
+              <i class="fab fa-react fa-7x" style={{ marginLeft: '00px',marginBottom:"40px"  }}></i>
+              <i class="fab fa-html5 fa-7x" style={{ marginLeft: '00px',marginBottom:"40px"  }}></i>
               <i
                 class="fab fa-css3-alt fa-7x"
-                style={{ marginLeft: '100px',marginBottom:"40px"  }}
+                style={{ marginLeft: '00px',marginBottom:"40px"  }}
               ></i>
               <i class="fab fa-node fa-7x" style={{ marginLeft: '100px' }}></i>
             </div>{' '}
           </Cell>
           <Cell
             offsetDesktop={1}
+            offsetPhone={1}
             shadow={12}
             col={12}
             tablet={12}
@@ -113,6 +114,7 @@ const About = () => {
             shadow="10"
             col={2}
             offsetDesktop={2}
+            offsetPhone={1}
             tablet={12}
             offsetTablet={2}
             phone={12}
@@ -137,6 +139,7 @@ const About = () => {
             col={2}
             tablet={12}
             offsetTablet={2}
+            offsetPhone={1}
             phone={12}
             style={{
               marginTop: '80px',
@@ -159,6 +162,7 @@ const About = () => {
             col={2}
             tablet={12}
             offsetTablet={2}
+            offsetPhone={1}
             phone={12}
             style={{
               marginTop: '80px',
@@ -180,6 +184,7 @@ const About = () => {
            col={2}
            tablet={12}
            offsetTablet={2}
+           offsetPhone={1}
            phone={12}
            style={{
              marginTop: '80px',

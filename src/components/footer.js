@@ -12,7 +12,7 @@ const Footers = () => {
     <div>
       <Footer size="mega">
         <FooterSection type="middle" style={{ marginRight: '-290px' }}>
-          <Cell col={3} phone={12} tablet={4} offsetDesktop={0} offsetTablet={0}>
+          <Cell col={3} phone={4} tablet={4} offsetDesktop={0} offsetTablet={0}>
             <FooterDropDownSection
               title="Resume"
               style={{ marginRight: '0px', marginLeft: '0px' }}
@@ -31,7 +31,7 @@ const Footers = () => {
 
           <Cell
             col={3}
-            phone={12}
+            phone={4}
             tablet={4}
             offsetDesktop={2}
             offsetTablet={0}
@@ -49,7 +49,7 @@ const Footers = () => {
             </FooterDropDownSection>
           </Cell>
 
-          <Cell col={3} phone={12} tablet={4} offsetDesktop={4}>
+          <Cell col={3} phone={4} tablet={4} offsetDesktop={4}>
             <FooterDropDownSection
               title="Linked in"
               style={{ marginRight: '0px' }}
@@ -64,7 +64,7 @@ const Footers = () => {
               </FooterLinkList>
             </FooterDropDownSection>
           </Cell>
-          <Cell col={3} phone={12} tablet={4} offsetDesktop={6}>
+          <Cell col={3} phone={4} tablet={4} offsetDesktop={6}>
             <FooterDropDownSection
               title="Medium"
               style={{ marginRight: '00px' }}
@@ -76,7 +76,7 @@ const Footers = () => {
               </FooterLinkList>
             </FooterDropDownSection>
           </Cell>
-          <Cell col={3} phone={12} tablet={4} offsetDesktop={8}>
+          <Cell col={3} phone={4} tablet={4} offsetDesktop={8}>
             <FooterDropDownSection
               title="Email"
               style={{ marginRight: '0px' }}
