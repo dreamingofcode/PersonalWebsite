@@ -12,44 +12,48 @@ const About = () => {
   return (
     <div>
       <FadeIn transitionDuration="1800">
-            <Grid>
-        <div className="about-intro">
-          <h1 style={{ marginTop: '15px' }}>About Me!</h1>
-          <img
-            src={me}
-            alt="Picture of me"
-            height="200px"
-            style={{ borderRadius: '100px', border: 'purple solid 10px' }}
-            />
-          <Cell col={8} offset="2">
-            <h5 style={{ marginTop: '10px' }}>
-              One of my biggest aspirations in life is to find meaningful work.
-              I have an unquenchable thirst for opportunnities that will allow
-              me to obtain a sense of reassurance and fullfilment through
-              personal development and growth. I enjoy creative fields and
-              flourish in collaborative environments. My biggest desire in life
-              is to make an impact and to have a positive influence on the
-              world.
-            </h5>
+        <Grid>
+          <Cell col={10} offsetDesktop={1}  phone={12} tablet={12}>
+            <div className="about-intro">
+              <h1 style={{ marginTop: '15px' }}>About Me!</h1>
+              <img
+                src={me}
+                alt="Picture of me"
+                height="200px"
+                style={{ borderRadius: '100px', border: 'purple solid 10px' }}
+              />
+              <h5 style={{ marginTop: '30px' ,marginLeft:"10px",marginRight:"10px",marginBottom:"0px"}}>
+                One of my biggest aspirations in life is to find meaningful
+                work. I have an unquenchable thirst for opportunnities that will
+                allow me to obtain a sense of reassurance and fullfilment
+                through personal development and growth. I enjoy creative fields
+                and flourish in collaborative environments. My biggest desire in
+                life is to make an impact and to have a positive influence on
+                the world.
+              </h5>
+            </div>
           </Cell>
-        </div>
-          {/* <GifPlayer
-            gif="https://media.giphy.com/media/3oz8xDp5mAEOAZXEPe/giphy.gif"
-            still={black}
-            autoplay="true"
-            style={{height:"100px",marginLeft:"0px"}}
-          />  */}
-<div style={{marginTop:"60px"}}>
-          <i class="fab fa-html5 fa-7x" style={{marginLeft:"300px"}}></i>
-          <i class="fab fa-js-square fa-7x" style={{marginLeft:"100px"}}></i>
-          <i class="fab fa-react fa-7x" style={{marginLeft:"100px"}}></i>
-          <i class="fab fa-css3-alt fa-7x" style={{marginLeft:"100px"}}></i>
-          <i class="fab fa-node fa-7x" style={{marginLeft:"100px"}}></i>
-        </div>  <Cell
-            offset="1"
-            shadow="12"
+          <Cell col={12} tablet={1} offsetTablet={1} phone={12}>
+            <div style={{ marginTop: '60px' }}>
+              <i
+                class="fab fa-js-square fa-7x"
+                style={{ marginLeft: '100px',marginBottom:"40px" }}
+              ></i>
+              <i class="fab fa-react fa-7x" style={{ marginLeft: '100px',marginBottom:"40px"  }}></i>
+              <i class="fab fa-html5 fa-7x" style={{ marginLeft: '100px',marginBottom:"40px"  }}></i>
+              <i
+                class="fab fa-css3-alt fa-7x"
+                style={{ marginLeft: '100px',marginBottom:"40px"  }}
+              ></i>
+              <i class="fab fa-node fa-7x" style={{ marginLeft: '100px' }}></i>
+            </div>{' '}
+          </Cell>
+          <Cell
+            offsetDesktop={1}
+            shadow={12}
             col={12}
-            tablet={8}
+            tablet={12}
+            phone={12}
             style={{
               marginTop: '80px',
               backgroundColor: '#8898b6',
@@ -58,29 +62,60 @@ const About = () => {
             }}
           >
             <h1>Full-stack Software-Engineer</h1>
-           <div style={{marginLeft:"20px",marginRight:"20px"}}>
-            <h5> My passion for software-engineering primarily began approximatetly four years ago once I initially discovered that the field was heavily dependent on collaboration and problem-solving through creative thinking.
-               I am intrigued by
-              the sophicatication and intricacy of the level of association and networking that is required to build software and other large-scale technologies. Initially,
-              I planned to aquire a bachelors in Computer Science, however, due to circumstances outside of my immediate control, I was only able to aquire my Associates Degree in Applied Science. My degree was fully geared towards my transition into a computer science program and so the majority of my 
-              focus was heavily mathematical and STEM related.
-            </h5><b/>
-            <h5> After many months of tireless research and consideration I made the decision to attend a software-engineering bootcamp in order to get a jumpstart in my carreer. I attended Flatiron Schools' fully-immersive full-stack web development program at the beginning of 2020 and graduated in the month of April.
-While in this intense program I was able to realize my true potential in becoming an independent scholar and also aquired the most ideal foundational understanding about programming. I have aquired proficient understanding of object-oriented programing, MVC models, optimization of data structures, asynchronous mechanisms, and many other related programming concepts.
-
-            </h5>
-            <b/>
-            <h5> Currently, I have taken the initiative to broaden my professional skills and gain more expirience by making myself available to freelance work and personal projects. I am also enrolled in various certification programs in MEAN stack and Advanced Web Design. After approaching multiple projects, I have taken a greater interest in Front end development and so creating beautiful Design and vibrant webpages is a major interest for me.
-
-            </h5>
+            <div style={{ marginLeft: '20px', marginRight: '20px' }}>
+              <h5>
+                {' '}
+                My passion for software-engineering primarily began
+                approximatetly four years ago once I initially discovered that
+                the field was heavily dependent on collaboration and
+                problem-solving through creative thinking. I am intrigued by the
+                sophicatication and intricacy of the level of association and
+                networking that is required to build software and other
+                large-scale technologies. Initially, I planned to aquire a
+                bachelors in Computer Science, however, due to circumstances
+                outside of my immediate control, I was only able to aquire my
+                Associates Degree in Applied Science. My degree was fully geared
+                towards my transition into a computer science program and so the
+                majority of my focus was heavily mathematical and STEM related.
+              </h5>
+              <b />
+              <h5>
+                {' '}
+                After many months of tireless research and consideration I made
+                the decision to attend a software-engineering bootcamp in order
+                to get a jumpstart in my carreer. I attended Flatiron Schools'
+                fully-immersive full-stack web development program at the
+                beginning of 2020 and graduated in the month of April. While in
+                this intense program I was able to realize my true potential in
+                becoming an independent scholar and also aquired the most ideal
+                foundational understanding about programming. I have aquired
+                proficient understanding of object-oriented programing, MVC
+                models, optimization of data structures, asynchronous
+                mechanisms, and many other related programming concepts.
+              </h5>
+              <b />
+              <h5>
+                {' '}
+                Currently, I have taken the initiative to broaden my
+                professional skills and gain more expirience by making myself
+                available to freelance work and personal projects. I am also
+                enrolled in various certification programs in MEAN stack and
+                Advanced Web Design. After approaching multiple projects, I have
+                taken a greater interest in Front end development and so
+                creating beautiful Design and vibrant webpages is a major
+                interest for me.
+              </h5>
             </div>
           </Cell>
         </Grid>
-        <Grid style={{ marginTop: '-50px', marginLeft: '250px' }}>
+        <Grid style={{ marginTop: '-50px', marginLeft: '-80px' }}>
           <Cell
             shadow="10"
             col={2}
-            tablet={3}
+            offsetDesktop={2}
+            tablet={12}
+            offsetTablet={2}
+            phone={12}
             style={{
               marginTop: '80px',
               marginRight: '50px',
@@ -100,7 +135,9 @@ While in this intense program I was able to realize my true potential in becomin
           <Cell
             shadow="10"
             col={2}
-            phone={3}
+            tablet={12}
+            offsetTablet={2}
+            phone={12}
             style={{
               marginTop: '80px',
               marginRight: '50px',
@@ -120,7 +157,9 @@ While in this intense program I was able to realize my true potential in becomin
           <Cell
             shadow="10"
             col={2}
-            tablet={3}
+            tablet={12}
+            offsetTablet={2}
+            phone={12}
             style={{
               marginTop: '80px',
               marginRight: '50px',
@@ -137,15 +176,17 @@ While in this intense program I was able to realize my true potential in becomin
           </Cell>
 
           <Cell
-            shadow="10"
-            col={2}
-            tablet={3}
-            style={{
-              marginTop: '80px',
-              backgroundColor: '#8898b6',
-              // width: '1200px',
-              border: 'purple solid',
-            }}
+           shadow="10"
+           col={2}
+           tablet={12}
+           offsetTablet={2}
+           phone={12}
+           style={{
+             marginTop: '80px',
+             marginRight: '50px',
+             backgroundColor: '#8898b6',
+             border: 'purple solid',
+           }}
           >
             <i
               class="fas fa-cloud-upload-alt fa-4x"

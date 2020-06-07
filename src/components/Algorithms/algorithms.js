@@ -11,7 +11,7 @@ const Algorithms = () => {
     <div>
       <FadeIn transitionDuration="1800">
         <h1>Algorithms!</h1>
-        <Cell col={8} offset="2" phone={12} tablet={12}>
+        <Cell col={8} offsetDesktop={2} phone={12} tablet={12}>
           <h5 style={{ marginTop: '-10px', marginBottom: '80px' }}>
             For the sake of practice and optimal data structure design, I post
             algorithms every friday afternoon! You can also view the source

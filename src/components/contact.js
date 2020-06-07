@@ -9,7 +9,7 @@ const Contact = () => {
     <div>
       <FadeIn transitionDuration="1800">
         <h1>Contact Me!</h1>
-        <Cell col={8} offset="2">
+        <Cell col={8} offsetDesktop={2} tablet={12} phone={12}>
           <h5 style={{ marginTop: '-10px', marginBottom: '80px' }}>
             You can Find hyperlinks to my social media accounts and my resume
             down below. For a faster response , I can be reached via telephone

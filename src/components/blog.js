@@ -54,14 +54,14 @@ function Blog() {
     <div>
       <FadeIn transitionDuration="1800">
         <h1 className="mydiv">Personal Blog</h1>
-        <Cell col={8} offset="2">
+        <Cell col={8} offsetDesktop={2} tablet={12} phone={12}>
         <h5 style={{marginTop:"-10px",marginBottom:"80px"}}>From the perspective of a Bootcamp graduate, keep up with my personal blog to learn more about my journey and relevant technologies!
           Blogs are posted every sunday afternoon on Medium and can also be accessed through this site! 
         </h5>
         </Cell>
         <Grid className="demo-grid-2 about">
-          <Cell col={6} 
-            style={{ width: '612px', marginBottom: '200px',marginLeft:"80px",marginRight:"-20px"}}
+          <Cell col={6} tablet={12} phone={12}
+            style={{ width: '612px', marginBottom: '200px',marginLeft:"0px",marginRight:"-20px"}}
           >
             <div className={classes.root}>
               <div className={classes.wrapper}>

@@ -48,11 +48,11 @@ const ValidateSubsequence = (props) => {
   return (
     <div className="col col-4 ">
       <Grid>
-        <Cell col={6} phone={12} tablet={4}>
+        <Cell col={12} phone={12} tablet={12}>
           <Card
             shadow={10}
             style={{
-              width: '652px',
+               width: '566px',
               margin: 'auto',
               marginBottom: '100px',
             }}
