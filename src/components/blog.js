@@ -61,7 +61,7 @@ function Blog() {
         </Cell>
         <Grid className="demo-grid-2 about">
           <Cell col={6} tablet={12} phone={12}
-            style={{ width: '612px', marginBottom: '200px',marginLeft:"0px",marginRight:"-20px"}}
+            style={{ width: '612px', marginBottom: '200px',marginLeft:"80px",marginRight:"-20px"}}
           >
             <div className={classes.root}>
               <div className={classes.wrapper}>

@@ -51,7 +51,7 @@ const TwoSums = (props) => {
           <Card
             shadow={10}
             style={{
-               width: '566px',
+               width: 'fit-content',
               margin: 'auto',
               marginBottom: '100px',
             }}

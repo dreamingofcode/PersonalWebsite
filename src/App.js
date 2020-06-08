@@ -4,12 +4,14 @@ import cesar from './assets/icons/cesar.jpg';
 import Main from './components/main'
 import Footers from './components/footer'
 import './App.css';
+import MobileHeader from './components/mobileResponsive.js/mobileHeader'
 
 function App() {
   return (
     <div className="App">
       <div style={{ height: '300px', position: 'relative' }}>
         <Layout
+        className="header"
           style={{
             background:
               'url(https://media.giphy.com/media/5dYqPVcoq9mKuxleyR/giphy.gif) center / cover',
@@ -57,6 +59,7 @@ function App() {
           /></a>
           <Content />
         </Layout>
+        <MobileHeader/>
       </div>
       <Main/>
 

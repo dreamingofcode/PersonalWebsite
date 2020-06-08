@@ -22,7 +22,7 @@ const About = () => {
                 height="200px"
                 style={{ borderRadius: '100px', border: 'purple solid 10px' }}
               />
-              <h5 style={{ marginTop: '30px' ,marginLeft:"10px",marginRight:"10px",marginBottom:"0px"}}>
+              <h4 style={{ marginTop: '30px' ,marginLeft:"10px",marginRight:"10px",marginBottom:"0px",backgroundColor:'',border:"purple solid 5px",width:"fit-content",height:"fit-content"}}>
                 One of my biggest aspirations in life is to find meaningful
                 work. I have an unquenchable thirst for opportunnities that will
                 allow me to obtain a sense of reassurance and fullfilment
@@ -30,7 +30,7 @@ const About = () => {
                 and flourish in collaborative environments. My biggest desire in
                 life is to make an impact and to have a positive influence on
                 the world.
-              </h5>
+              </h4>
             </div>
           </Cell>
           <Cell col={12} tablet={1} offsetTablet={1} phone={12} offsetPhone={0}>

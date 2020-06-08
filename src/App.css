@@ -16,18 +16,16 @@
   animation-name: my-animation;
   animation-iteration-count: 1;
   animation-direction: right;
-  
 }
-.about{
-  background-color:  #8898b6;
+.about {
+  background-color: #8898b6;
   padding-bottom: 100px;
-
 }
 #gifs-rows img {
   cursor: pointer;
 }
 #gifs-rows .gif-file {
-  display:none;
+  display: none;
 }
 @keyframes my-animation {
   0% {
@@ -47,71 +45,87 @@
     top: -250px;
   }
 }
-.landing{
+.landing {
   margin-top: 2px;
   margin-right: -00px;
   margin-bottom: -200px;
-background-image: url(https://media.giphy.com/media/3oz8xDp5mAEOAZXEPe/giphy.gif);
-background-position: center;
-background-repeat: no-repeat;
-/* border:palevioletred solid 10px; */
-width:900px;
-height: 300px;
+  background-image: url(https://media.giphy.com/media/3oz8xDp5mAEOAZXEPe/giphy.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border:palevioletred solid 10px; */
+  width: 900px;
+  height: 300px;
 }
 
-.about-intro{
-background-image: url("https://media.giphy.com/media/hTZqITHNkgmX0fwt1C/giphy.gif");
-background-repeat: no-repeat;
-background-size:cover;
-background-position: 0px;
+.about-intro {
+  background-image: url('https://media.giphy.com/media/hTZqITHNkgmX0fwt1C/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px;
 
-height: 530px;
+  height: 530px;
 }
 
-.contactForm{
+.contactForm {
   padding-top: 70px;
   padding-bottom: 70px;
-  
+
   background-color: rgb(24, 205, 171);
- 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .mobile-header{
+    background-color: rgba(58, 64, 97, 0.438);
+  }
+  .card {
+    width: 100px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   
-}
-
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-  #primary { width:67%; }
-  #secondary { width:30%; margin-left:3%;}  
-}
-
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-  #primary { width:100%; }
-  #secondary { width:100%; margin:0; border:none; }
-}
-img { max-width: 100%;  }
-
-@media (min-device-width:600px) {
-  .card{
-    width: ;
-  }
-  img[data-src-600px] {
-      content: attr(data-src-600px, url);
-  }
-}
-@media (min-device-width:800px) {
-  img[data-src-800px] {
-      content: attr(data-src-800px, url);
+  .about {
+    background: green;
   }
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card {
+    max-width: 600px;
   }
-} */
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card {
+    max-width: 600px;
+  }
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card {
+    max-width: 600px;
+  }
+  .mobile-header {
+    display: none;
+  }
+}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #344567;
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;

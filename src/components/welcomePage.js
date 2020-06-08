@@ -105,6 +105,7 @@ const WelcomePage = () => {
                 }}
               >
                 <Card
+                  className="card"
                   shadow={10}
                   style={{
                     width: 'fit-content',
@@ -158,7 +159,7 @@ ${isShownPorfolio} )`,
                   setIsShownBlog(blackBackground);
                 }}
               >
-                <Card shadow={10} style={{ width: 'fit-content', margin: 'auto', marginBottom: '40px' }}>
+                <Card   className="card" shadow={10} style={{ width: 'fit-content', margin: 'auto', marginBottom: '40px' }}>
                   <CardTitle
                     style={{
                       color: 'white',
@@ -203,7 +204,7 @@ ${isShownPorfolio} )`,
                   setIsShownAlgo(algoPreset);
                 }}
               >
-                <Card shadow={10} style={{ width: 'fit-content', margin: 'auto' }}>
+                <Card   className="card" shadow={10} style={{ width: 'fit-content', margin: 'auto' }}>
                   <CardTitle
                     style={{
                       color: 'black',
