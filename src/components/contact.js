@@ -61,6 +61,7 @@ const Contact = () => {
             tablet={12}
           >
             <form method="POST" name="contact">
+              <h3>Contact Form</h3>
               <input type="hidden" name="form-name" value="contact" />
               <div className="fields">
                 <div className="field half ">
@@ -68,9 +69,9 @@ const Contact = () => {
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Name"
+                    placeholder="Your Full Name"
                     style={{
-                      // width: '400px',
+                      width: '300px',
                       marginBottom: '30px',
                       height: '35px',
                     }}
@@ -81,9 +82,9 @@ const Contact = () => {
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Email"
+                    placeholder="Enter Email"
                     style={{
-                      // width: '400px',
+                      width: '300px',
                       marginBottom: '30px',
                       height: '35px',
                     }}
@@ -94,9 +95,9 @@ const Contact = () => {
                   <textarea
                     name="message"
                     id="message"
-                    placeholder="Message"
+                    placeholder="Insert Message"
                     rows="7"
-                    // style={{ width: '400px' }}
+                    style={{ width: '300px' }}
                   ></textarea>
                 </div>
                 <div className="field">

@@ -34,16 +34,16 @@ const About = () => {
             </div>
           </Cell>
           <Cell col={12} tablet={1} offsetTablet={1} phone={12} offsetPhone={0}>
-            <div style={{ marginTop: '60px' }}>
+            <div style={{ marginTop: '60px', }}>
               <i
                 class="fab fa-js-square fa-7x"
-                style={{ marginLeft: '00px',marginBottom:"40px" }}
+                style={{ marginLeft: '100px',marginBottom:"40px" }}
               ></i>
-              <i class="fab fa-react fa-7x" style={{ marginLeft: '00px',marginBottom:"40px"  }}></i>
-              <i class="fab fa-html5 fa-7x" style={{ marginLeft: '00px',marginBottom:"40px"  }}></i>
+              <i class="fab fa-react fa-7x" style={{ marginLeft: '100px',marginBottom:"40px"  }}></i>
+              <i class="fab fa-html5 fa-7x" style={{ marginLeft: '100px',marginBottom:"40px"  }}></i>
               <i
                 class="fab fa-css3-alt fa-7x"
-                style={{ marginLeft: '00px',marginBottom:"40px"  }}
+                style={{ marginLeft: '100px',marginBottom:"40px"  }}
               ></i>
               <i class="fab fa-node fa-7x" style={{ marginLeft: '100px' }}></i>
             </div>{' '}

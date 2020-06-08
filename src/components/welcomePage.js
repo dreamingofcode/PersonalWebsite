@@ -27,7 +27,7 @@ const WelcomePage = () => {
   return (
     <div className="about">
       <FadeIn transitionDuration="1800">
-        <Cell col={8} phone={12} tablet={12} offsetDesktop={2} offsetTablet={1}>
+        <Cell col={8} phone={12} tablet={12} offsetDesktop={2} offsetTablet={0}>
           <h1 style={{ paddingTop: '70px' }}>Welcome!</h1>
           <h5 style={{ marginBottom: '50px' }}>
             Hello and welcome to my Personal Website! I am a full-stack software
@@ -39,7 +39,7 @@ const WelcomePage = () => {
             resourceful, driven, creative, and optomistic. Reach out!
           </h5>
         </Cell>
-        <div className="abot" style={{ marginTop: '30px' }}>
+        <div style={{ marginTop: '30px' }}>
           <Grid>
             <Cell col={6} tablet={12} phone={12} offset={0}>
               <div
@@ -55,9 +55,10 @@ const WelcomePage = () => {
                 }}
               >
                 <Card
+                  className="card"
                   shadow={10}
                   style={{
-                    width: '530px',
+                    width: '480px',
                     margin: 'auto',
                     marginBottom: '40px',
                   }}
@@ -70,7 +71,8 @@ const WelcomePage = () => {
                       background: `url(${isShown})`,
                     }}
                   >
-                    About Me!
+                    <h3> About Me!</h3>
+                   
                   </CardTitle>
 
                   <CardText>
@@ -106,7 +108,7 @@ const WelcomePage = () => {
                 <Card
                   shadow={10}
                   style={{
-                    width: '530px',
+                    width: '480px',
                     margin: 'auto',
                   }}
                 >
@@ -120,9 +122,11 @@ ${isShownPorfolio} )`,
                       backgroundSize: 'cover',
                       backgroundRepeat: 'no-repeat',
                       marginLeft: '-21px',
+                      fontSize:""
                     }}
                   >
                     . Portfolio
+                    
                   </CardTitle>
                   <CardText>
                     Checkout my latest projects in full-stack web-development
@@ -153,7 +157,7 @@ ${isShownPorfolio} )`,
                   setIsShownBlog(blackBackground);
                 }}
               >
-                <Card shadow={10} style={{ width: '530px', margin: 'auto' }}>
+                <Card shadow={10} style={{ width: '480px', margin: 'auto' }}>
                   <CardTitle
                     style={{
                       color: 'white',
@@ -198,7 +202,7 @@ ${isShownPorfolio} )`,
                   setIsShownAlgo(algoPreset);
                 }}
               >
-                <Card shadow={10} style={{ width: '530px', margin: 'auto' }}>
+                <Card shadow={10} style={{ width: '480px', margin: 'auto' }}>
                   <CardTitle
                     style={{
                       color: 'black',

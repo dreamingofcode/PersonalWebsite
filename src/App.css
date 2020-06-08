@@ -73,9 +73,10 @@ height: 530px;
   padding-bottom: 70px;
   
   background-color: rgb(24, 205, 171);
-  /* width: 200px; */
+ 
   
 }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

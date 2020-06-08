@@ -11,8 +11,8 @@ const Footers = () => {
   return (
     <div>
       <Footer size="mega">
-        <FooterSection type="middle" style={{ marginRight: '-290px' }}>
-          <Cell col={3} phone={4} tablet={4} offsetDesktop={0} offsetTablet={0}>
+        <FooterSection type="top" style={{ marginRight: '-290px' }}>
+          <Cell col={3} phone={3} tablet={4} offsetDesktop={0} offsetTablet={0}>
             <FooterDropDownSection
               title="Resume"
               style={{ marginRight: '0px', marginLeft: '0px' }}
