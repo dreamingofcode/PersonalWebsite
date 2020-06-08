@@ -89,7 +89,6 @@ const WelcomePage = () => {
                     </a>
                   </CardActions>
                   <CardMenu style={{ color: '#fff' }}>
-                    {/* <IconButton name="share" /> */}
                   </CardMenu>
                 </Card>
               </div>
@@ -110,9 +109,11 @@ const WelcomePage = () => {
                   style={{
                     width: '480px',
                     margin: 'auto',
+                    marginBottom: '40px'
                   }}
                 >
                   <CardTitle
+                
                     style={{
                       color: 'white',
                       height: '176px',
@@ -157,7 +158,7 @@ ${isShownPorfolio} )`,
                   setIsShownBlog(blackBackground);
                 }}
               >
-                <Card shadow={10} style={{ width: '480px', margin: 'auto' }}>
+                <Card shadow={10} style={{ width: '480px', margin: 'auto', marginBottom: '40px' }}>
                   <CardTitle
                     style={{
                       color: 'white',
