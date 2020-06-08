@@ -13,9 +13,10 @@ function App() {
           style={{
             background:
               'url(https://media.giphy.com/media/5dYqPVcoq9mKuxleyR/giphy.gif) center / cover',
-            backgroundPosition: '0px -800px',
+            backgroundPosition: '00px',
             overflowY:"hidden",
-            overscrollBehaviorY:"none"
+            overscrollBehaviorY:"none",
+          
           }}
         >
           <Header transparent title="Software-Engineer" style={{ color: 'white' }}>

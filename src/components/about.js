@@ -49,16 +49,18 @@ const About = () => {
             </div>{' '}
           </Cell>
           <Cell
-            offsetDesktop={1}
-            offsetPhone={1}
+            offsetDesktop={0}
+            offsetPhone={0}
             shadow={12}
             col={12}
             tablet={12}
             phone={12}
             style={{
               marginTop: '80px',
+              // marginRight:"160px",
+              // marginLeft:"160px",
               backgroundColor: '#8898b6',
-              width: '1200px',
+              width: "fit-content",
               border: 'purple solid',
             }}
           >

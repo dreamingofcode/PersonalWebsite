@@ -58,7 +58,7 @@ const WelcomePage = () => {
                   className="card"
                   shadow={10}
                   style={{
-                    width: '480px',
+                    width: 'fit-content',
                     margin: 'auto',
                     marginBottom: '40px',
                   }}
@@ -107,7 +107,7 @@ const WelcomePage = () => {
                 <Card
                   shadow={10}
                   style={{
-                    width: '480px',
+                    width: 'fit-content',
                     margin: 'auto',
                     marginBottom: '40px'
                   }}
@@ -158,7 +158,7 @@ ${isShownPorfolio} )`,
                   setIsShownBlog(blackBackground);
                 }}
               >
-                <Card shadow={10} style={{ width: '480px', margin: 'auto', marginBottom: '40px' }}>
+                <Card shadow={10} style={{ width: 'fit-content', margin: 'auto', marginBottom: '40px' }}>
                   <CardTitle
                     style={{
                       color: 'white',
@@ -203,7 +203,7 @@ ${isShownPorfolio} )`,
                   setIsShownAlgo(algoPreset);
                 }}
               >
-                <Card shadow={10} style={{ width: '480px', margin: 'auto' }}>
+                <Card shadow={10} style={{ width: 'fit-content', margin: 'auto' }}>
                   <CardTitle
                     style={{
                       color: 'black',

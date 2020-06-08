@@ -88,13 +88,27 @@ height: 530px;
   #primary { width:100%; }
   #secondary { width:100%; margin:0; border:none; }
 }
-img { max-width: 50%; height: auto; }
+img { max-width: 100%;  }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (min-device-width:600px) {
+  .card{
+    width: ;
+  }
+  img[data-src-600px] {
+      content: attr(data-src-600px, url);
+  }
+}
+@media (min-device-width:800px) {
+  img[data-src-800px] {
+      content: attr(data-src-800px, url);
+  }
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
