@@ -11,8 +11,14 @@ const Footers = () => {
   return (
     <div>
       <Footer size="mega">
-        <FooterSection type="top" style={{ marginRight: '-290px' }}>
-          <Cell col={3} phone={12} tablet={4} offsetDesktop={0} offsetTablet={0}>
+        <FooterSection type="middle" style={{ marginRight: '0px' }}>
+          <Cell
+            col={12}
+            phone={12}
+            tablet={12}
+            offsetDesktop={0}
+            offsetTablet={0}
+          >
             <FooterDropDownSection
               title="Resume"
               style={{ marginRight: '0px', marginLeft: '0px' }}
@@ -27,7 +33,7 @@ const Footers = () => {
                 </a>
               </FooterLinkList>
             </FooterDropDownSection>
-          </Cell>
+            {/* </Cell>
 
           <Cell
             col={3}
@@ -35,7 +41,7 @@ const Footers = () => {
             tablet={4}
             offsetDesktop={2}
             offsetTablet={0}
-          >
+          > */}
             <FooterDropDownSection
               title="Github"
               style={{ marginRight: '0px' }}
@@ -47,9 +53,9 @@ const Footers = () => {
                 </a>
               </FooterLinkList>
             </FooterDropDownSection>
-          </Cell>
+            {/* </Cell>
 
-          <Cell col={3} phone={4} tablet={4} offsetDesktop={4}>
+          <Cell col={3} phone={4} tablet={4} offsetDesktop={4}> */}
             <FooterDropDownSection
               title="Linked in"
               style={{ marginRight: '0px' }}
@@ -63,8 +69,15 @@ const Footers = () => {
                 </a>
               </FooterLinkList>
             </FooterDropDownSection>
-          </Cell>
-          <Cell col={3} phone={4} tablet={4} offsetDesktop={6}>
+            {/* </Cell>
+          <Cell col={3} phone={4} tablet={4} offsetDesktop={6}> */}
+            <FooterDropDownSection title="Email">
+              <FooterLinkList>
+                <a href="mailto:cesarmota922@gmail.com" target="_blank">
+                  <i class="fas fa-envelope-square fa-5x"></i>
+                </a>
+              </FooterLinkList>
+            </FooterDropDownSection>
             <FooterDropDownSection
               title="Medium"
               style={{ marginRight: '00px' }}
@@ -75,21 +88,30 @@ const Footers = () => {
                 </a>
               </FooterLinkList>
             </FooterDropDownSection>
-          </Cell>
-          <Cell col={3} phone={4} tablet={4} offsetDesktop={8}>
-            <FooterDropDownSection
-              title="Email"
-              style={{ marginRight: '0px' }}
+            {/* <FooterDropDownSection
+              title="Youtube"
+              style={{ marginRight: '00px' }}
             >
               <FooterLinkList>
-                <a href="mailto:cesarmota922@gmail.com" target="_blank">
-                  <i class="fas fa-envelope-square fa-5x"></i>
+                <a href="https://medium.com/@cesarmota922" target="_blank">
+                  <i class="fab fa-youtube fa-5x"></i>
                 </a>
               </FooterLinkList>
-            </FooterDropDownSection>
+            </FooterDropDownSection> */}
+            {/* <FooterDropDownSection
+              title="UpWork"
+              style={{ marginRight: '00px' }}
+            >
+              <FooterLinkList>
+                <a href="https://medium.com/@cesarmota922" target="_blank">
+                <i class="fas fa-user-friends fa-5x"></i>                </a>
+              </FooterLinkList>
+            </FooterDropDownSection> */}
+            
+           
+            {/* </Cell> */}
+            {/* <Cell col={3} phone={4} tablet={4} offsetDesktop={8}> */}
           </Cell>
-
-
         </FooterSection>
         <Cell
           shadow={2}
@@ -98,7 +120,6 @@ const Footers = () => {
           phone={12}
           tablet={12}
           offsetPhone={0}
-
         >
           <FooterSection type="top">
             <FooterLinkList>
@@ -110,7 +131,6 @@ const Footers = () => {
             </FooterLinkList>
           </FooterSection>
         </Cell>
-
       </Footer>
     </div>
   );
