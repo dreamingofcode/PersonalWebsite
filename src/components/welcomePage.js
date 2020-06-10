@@ -28,7 +28,7 @@ const WelcomePage = () => {
     <div className="about">
       <FadeIn transitionDuration="1800">
         <Cell  col={8} phone={12} tablet={12} offsetDesktop={2} offsetTablet={0}>
-          <h1 className="mobile-cell"style={{ paddingTop: '70px' }}>Welcome!</h1>
+          <h1 className="mobile-cell" style={{ paddingTop: '70px' }}>Welcome!</h1>
           <h5 style={{ marginBottom: '50px' }}>
             Hello and welcome to my Personal Website! I am a full-stack software
             engineer currently living in the city of Chicago! I am available for
@@ -71,7 +71,7 @@ const WelcomePage = () => {
                       background: `url(${isShown})`,
                     }}
                   >
-                    <h3> About Me!</h3>
+                    <h2> About Me!</h2>
                    
                   </CardTitle>
 
@@ -120,14 +120,11 @@ const WelcomePage = () => {
                       height: '176px',
                       background: `url(
 ${isShownPorfolio} )`,
-                      backgroundPosition: '20px',
                       backgroundSize: 'cover',
-                      backgroundRepeat: 'no-repeat',
-                      marginLeft: '-21px',
-                      fontSize:""
+                      // backgroundRepeat: 'no-repeat',
                     }}
                   >
-                    . Portfolio
+                   <h2>Portfolio</h2> 
                     
                   </CardTitle>
                   <CardText>

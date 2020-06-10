@@ -1,18 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import '../portfolio';
 
 import astroConnection from '../../assets/pictures/astroConnection.png';
 const AstroConnection = () => {
+  const [videoPlayer, setVideoPlayer] = useState('none');
+
   return (
     <React.Fragment>
       <Cell col={6} tablet={12} phone={12} shadow="10" className="about">
         <h3>Astro-Connection</h3>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div className="flip-card-front">
-              <img 
-              className="project-card"
+        <div className="mobile">
+          <Cell tablet={12} phone={12}>
+            <h5>
+              A social-Networking expirience infused with zodiac compatibility
+              matching! Get your daily and general horoscope reading today!
+            </h5>
+            <img
+              className="mobile-gif"
+              src="https://media.giphy.com/media/l0od7tThpTldB4whck/giphy.gif"
+              alt="Astro-Connection Gif presentation"
+              height="300px"
+            />
+            <br />
+            <button
+              onClick={() => {
+                setVideoPlayer('flex');
+              }}
+            >
+              View Demo
+            </button>
+            <a
+              href="https://github.com/dreamingofcode/Astro-Connect"
+              target="_blank"
+            >
+              <button>Github Repository</button>
+            </a>
+            <a href="https://astr-connection.herokuapp.com/" target="_blank">
+              <button>Visit Website</button>
+            </a>
+            <iframe
+              style={{ display: `${videoPlayer}`, marginLeft:"20px" }}
+              width="400"
+              height="315"
+             
+              src="https://www.youtube.com/embed/leuY6ShOFBA?controls=0&amp;start=60"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          </Cell>
+        </div>
+        <div class="flip-card project-card">
+          <div class="flip-card-inner ">
+            <div className="flip-card-front ">
+              <img
                 src={astroConnection}
                 alt="Avatar"
                 style={{ width: '513px', height: '200px' }}
@@ -23,9 +65,12 @@ const AstroConnection = () => {
                 matching! Get your daily and general horoscope reading today!
               </h5>
             </div>
-            <div class="flip-card-back">              
-              <img src="https://media.giphy.com/media/l0od7tThpTldB4whck/giphy.gif" alt="Astro-Connection Gif presentation" height="300px"></img>
-
+            <div class="flip-card-back">
+              <img
+                src="https://media.giphy.com/media/l0od7tThpTldB4whck/giphy.gif"
+                alt="Astro-Connection Gif presentation"
+                height="300px"
+              ></img>
             </div>
           </div>
           <Grid style={{ marginTop: '0px', marginLeft: '90px' }}>
@@ -75,9 +120,7 @@ const AstroConnection = () => {
               Horoscope-match compatibipty calculator
             </p>
             <p style={{ marginTop: '-20px' }}>User Account</p>
-            <p style={{ marginTop: '-20px' }}>
-              User Image upload 
-            </p>
+            <p style={{ marginTop: '-20px' }}>User Image upload</p>
             <p style={{ marginTop: '-20px' }}>
               Instant Messaging and Chat-rooms
             </p>
