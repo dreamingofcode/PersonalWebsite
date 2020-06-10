@@ -17,6 +17,7 @@ const About = () => {
             <div className="about-intro mobile-cell">
               <h1 style={{ marginTop: '15px' }}>About Me!</h1>
               <img
+              className="me"
                 src={me}
                 alt="Picture of me"
                

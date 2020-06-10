@@ -9,7 +9,10 @@ const Portfolio = () => {
   return (
     <React.Fragment>
       <FadeIn transitionDuration="1800">
-        <h1>Project Portfolio</h1>
+        <div className="cell">
+          <h1 >Project Portfolio</h1>
+          
+        </div>
         <Grid>
           <AstroConnection />
           <WatchList />

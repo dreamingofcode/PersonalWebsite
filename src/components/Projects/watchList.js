@@ -1,16 +1,17 @@
 import React from 'react';
 import { Grid, Cell } from 'react-mdl';
-import { Link } from 'react-router-dom';
+import '../portfolio.css';
 import watchList from '../../assets/pictures/watchList.png';
 const WatchList = () => {
   return (
     <React.Fragment>
-     <Cell shadow="10" col="6" className="about">
+     <Cell shadow="10" col={6} tablet={12} phone={12} className="about">
           <h3>Watch-List</h3>
           <div class="flip-card">
             <div class="flip-card-inner">
               <div className="flip-card-front">
                 <img
+                className="img"
                   src={watchList}
                   alt="Avatar"
                   style={{ width: '513px', height: '200px' }}
