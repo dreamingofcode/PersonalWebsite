@@ -40,10 +40,9 @@ const AstroConnection = () => {
               <button>Visit Website</button>
             </a>
             <iframe
-              style={{ display: `${videoPlayer}`, marginLeft:"20px" }}
+              style={{ display: `${videoPlayer}`, marginLeft: '20px' }}
               width="400"
               height="315"
-             
               src="https://www.youtube.com/embed/leuY6ShOFBA?controls=0&amp;start=60"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -92,29 +91,29 @@ const AstroConnection = () => {
           </Grid>{' '}
         </div>
         <Grid>
-          <Cell col="3" style={{ marginTop: '-50px' }}>
-            <h4>Front-End</h4>
+          <Cell col={3} tablet={3}offsetTablet={1} offsetPhone={1} phone={12} style={{ marginTop: '-50px' }}>
+            <h4 style={{textDecoration:"underline"}}>Front-End</h4>
 
-            <p style={{ marginTop: '-0px' }}>React.JS</p>
+            <p style={{ marginTop: '-20px' }}>React.JS</p>
             <p style={{ marginTop: '-20px' }}>Redux & Hooks</p>
             <p style={{ marginTop: '-20px' }}>Bootstrap</p>
             <p style={{ marginTop: '-20px' }}>CSS</p>
             <p style={{ marginTop: '-20px' }}>HTML</p>
-            <p style={{ marginTop: '-20px' }}>Socket.IO</p>
+            <p style={{ marginTop: '-20px',marginBottom:"40px" }}>Socket.IO</p>
           </Cell>
-          <Cell col="3" style={{ marginTop: '-50px' }}>
-            <h4>Back-End</h4>
+          <Cell col={3} tablet={3} phone={12} style={{ marginTop: '-50px' }}>
+            <h4 style={{textDecoration:"underline"}}>Back-End</h4>
 
-            <p style={{ marginTop: '-0px' }}>Ruby on Rails</p>
+            <p style={{ marginTop: '-20px' }}>Ruby on Rails</p>
             <p style={{ marginTop: '-20px' }}>PosgreSQL</p>
             <p style={{ marginTop: '-20px' }}>Cloudinary</p>
             <p style={{ marginTop: '-20px' }}>Express</p>
-            <p style={{ marginTop: '-20px' }}>Node.JS</p>
+            <p style={{ marginTop: '-20px' ,marginBottom:"40px"}}>Node.JS</p>
           </Cell>
-          <Cell col="6" style={{ marginTop: '-50px' }}>
-            <h4>Features</h4>
+          <Cell col={6} tablet={12} phone={12}style={{ marginTop: '-50px' }}>
+            <h4 style={{textDecoration:"underline"}}>Features</h4>
 
-            <p style={{ marginTop: '-0px' }}>Daily Horoscope Reading</p>
+            <p style={{ marginTop: '-15px' }}>Daily Horoscope Reading</p>
             <p style={{ marginTop: '-20px' }}>General Horsocope Reading</p>
             <p style={{ marginTop: '-20px' }}>
               Horoscope-match compatibipty calculator
