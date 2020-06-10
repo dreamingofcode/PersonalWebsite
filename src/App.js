@@ -24,7 +24,7 @@ function App() {
           <Header transparent title="Software-Engineer" style={{ color: 'white' }}>
             <Navigation style={{ fontFamily: 'sans-serif' }}>
               <a href="/About">About</a>
-              <a href="/Porfolio">Porfolio</a>
+              <a href="/Portfolio">Portfolio</a>
               <a href="/Blog">Blog</a>
               <a href="/Algorithms">Algorithms</a>
               <a href="/Contact">Contact</a>
@@ -33,7 +33,7 @@ function App() {
           <Drawer>
             <Navigation>
               <a href="/About">About</a>
-              <a href="/Porfolio">Porfolio</a>
+              <a href="/Portfolio">Portfolio</a>
               <a href="/Blog">Blog</a>
               <a href="/Algorithms">Algorithms</a>
               <a href="/Contact">Contact</a>
