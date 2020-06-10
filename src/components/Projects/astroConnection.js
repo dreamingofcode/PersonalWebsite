@@ -40,8 +40,8 @@ const AstroConnection = () => {
               <button>Visit Website</button>
             </a>
             <iframe
-              style={{ display: `${videoPlayer}`, marginLeft: '20px' }}
-              width="400"
+              style={{  display: `${videoPlayer}`,marginLeft: '20px' }}
+              width="350"
               height="315"
               src="https://www.youtube.com/embed/leuY6ShOFBA?controls=0&amp;start=60"
               frameborder="0"
