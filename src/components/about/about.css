@@ -1,0 +1,176 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header {
+      display: none;
+    }
+    .mobile-header{
+      background-color: rgba(58, 64, 97, 0.438);
+    }
+    .mobile-cell{
+      margin-top: 150px;
+      margin-bottom: 300px;
+    }
+    .mobile-language-icons{
+      display: none;
+    }
+    .about-intro{
+      height: 340px;
+    }
+    .card {
+      width: 100px;
+    }
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header {
+      display: none;
+    }
+    .mobile-header{
+      background-color: rgba(58, 64, 97, 0.438);
+    }
+    .mobile-cell{
+      margin-top: 150px;
+      margin-bottom: 300px;
+    }
+    .mobile-language-icons{
+      display: none;
+    }
+    .about-intro{
+      height: 740px;
+    }
+    .card {
+      width: 100px;
+    }
+    .initial-intro{
+        font-size: 25px;
+        margin-top: 60px;
+        margin-left:10px;
+        margin-right:10px;
+        margin-bottom:150px;
+        background-color:'';
+        border: none;
+        width:fit-content;
+        height:fit-content
+    
+      }
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .header {
+      display: none;
+    }
+     .mobile-cell{
+      margin-top: 100px;
+    }
+    .about-intro{
+      height: 570px;
+    }
+    .initial-intro{
+        margin-top: 70px;
+        margin-left:10px;
+        margin-right:10px;
+        margin-bottom:0px;
+        background-color:'';
+        border:purple solid 5px;
+        width:fit-content;
+        height:fit-content
+    
+      }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .card {
+      max-width: 600px;
+    }
+    .header {
+      display: flex;
+    
+    }
+    .mobile-header {
+      display: none;
+    }
+    .mobile-cell{
+      margin-top: 100px;
+      padding-top: -200px;
+    }
+    .about-intro{
+        height: 800px;
+    }
+    .initial-intro{
+        margin-top: 70px;
+        margin-left:10px;
+        margin-right:10px;
+        margin-bottom:0px;
+        background-color:'';
+        border:purple solid 5px;
+        width:fit-content;
+        height:fit-content
+    
+      }
+  
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .card {
+      max-width: 600px;
+    }
+    .mobile-header {
+      display: none;
+    }
+    .initial-intro{
+        margin-top: 70px;
+        margin-left:10px;
+        margin-right:10px;
+        margin-bottom:0px;
+        background-color:'';
+        border:purple solid 5px;
+        width:fit-content;
+        height:fit-content
+    
+      }
+      .about-intro{
+        height: 800px;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .card {
+      max-width: 600px;
+    }
+    .mobile-header {
+      display: none;
+    }
+    .initial-intro{
+        margin-top: 70px;
+        margin-left:10px;
+        margin-right:10px;
+        margin-bottom:0px;
+        background-color:'';
+        border:purple solid 5px;
+        width:fit-content;
+        height:fit-content
+    
+      }
+      .about-intro{
+        height: 800px;
+    }
+  }
+
+  .about-intro {
+    background-image: url('https://media.giphy.com/media/hTZqITHNkgmX0fwt1C/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px;
+  
+   /* background-size: 530px; */
+  }
+  img{
+    height:200px;
+    border-radius: 100px;
+     border: purple solid 10px;
+  }
+  

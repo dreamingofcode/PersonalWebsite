@@ -57,14 +57,7 @@
   height: 300px;
 }
 
-.about-intro {
-  background-image: url('https://media.giphy.com/media/hTZqITHNkgmX0fwt1C/giphy.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0px;
 
-  height: 530px;
-}
 
 .contactForm {
   padding-top: 70px;
@@ -81,6 +74,16 @@
   .mobile-header{
     background-color: rgba(58, 64, 97, 0.438);
   }
+  .mobile-cell{
+    margin-top: 150px;
+    margin-bottom: 300px;
+  }
+  .mobile-language-icons{
+    display: none;
+  }
+  .about-intro{
+    height: 340px;
+  }
   .card {
     width: 100px;
   }
@@ -88,9 +91,14 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
-  .about {
-    background: green;
+  .header {
+    display: none;
+  }
+   .mobile-cell{
+    margin-top: 100px;
+  }
+  .about-intro{
+    height: 570px;
   }
 }
 
@@ -99,8 +107,16 @@
   .card {
     max-width: 600px;
   }
+  .header {
+    display: flex;
+  
+  }
   .mobile-header {
     display: none;
+  }
+  .mobile-cell{
+    margin-top: 100px;
+    padding-top: -200px;
   }
 }
 

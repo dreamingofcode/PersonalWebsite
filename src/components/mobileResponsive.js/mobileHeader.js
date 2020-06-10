@@ -44,6 +44,8 @@ function MobileHeader() {
             />
                 <i className="fas fa-angle-double-right fa-4x my-div">Cesar Mota</i>
           </a>{' '}
+          <i className="fas  fa-2x my-div">Software Engineer</i>
+
           <Content />
         </Layout>
       </div>

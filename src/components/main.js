@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import About from './about';
+import About from './about/about';
 import Algorithms from './Algorithms/algorithms';
 import Porfolio from './porfolio';
 import Blog from './blog';

@@ -3,9 +3,9 @@ import { Grid, Cell } from 'react-mdl';
 import { withRouter } from 'react-router';
 
 import { Link } from 'react-router-dom';
-import me from '../assets/pictures/me.jpg';
+import me from '../../assets/pictures/me.jpg';
 import FadeIn from 'react-fade-in';
-
+import './about.css'
 var GifPlayer = require('react-gif-player');
 
 const About = () => {
@@ -14,15 +14,14 @@ const About = () => {
       <FadeIn transitionDuration="1800">
         <Grid>
           <Cell col={10} offsetDesktop={1}  phone={12} tablet={12}>
-            <div className="about-intro">
+            <div className="about-intro mobile-cell">
               <h1 style={{ marginTop: '15px' }}>About Me!</h1>
               <img
                 src={me}
                 alt="Picture of me"
-                height="200px"
-                style={{ borderRadius: '100px', border: 'purple solid 10px' }}
+               
               />
-              <h4 style={{ marginTop: '30px' ,marginLeft:"10px",marginRight:"10px",marginBottom:"0px",backgroundColor:'',border:"purple solid 5px",width:"fit-content",height:"fit-content"}}>
+              <h4  className="initial-intro" >
                 One of my biggest aspirations in life is to find meaningful
                 work. I have an unquenchable thirst for opportunnities that will
                 allow me to obtain a sense of reassurance and fullfilment
@@ -33,8 +32,8 @@ const About = () => {
               </h4>
             </div>
           </Cell>
-          <Cell col={12} tablet={1} offsetTablet={1} phone={12} offsetPhone={0}>
-            <div style={{ marginTop: '60px', }}>
+          <Cell  col={12} tablet={2} offsetTablet={1} phone={12} offsetPhone={0}>
+            <div className="mobile-language-icons" style={{ marginTop: '60px', }}>
               <i
                 class="fab fa-js-square fa-7x"
                 style={{ marginLeft: '100px',marginBottom:"40px" }}

@@ -27,8 +27,8 @@ const WelcomePage = () => {
   return (
     <div className="about">
       <FadeIn transitionDuration="1800">
-        <Cell col={8} phone={12} tablet={12} offsetDesktop={2} offsetTablet={0}>
-          <h1 style={{ paddingTop: '70px' }}>Welcome!</h1>
+        <Cell  col={8} phone={12} tablet={12} offsetDesktop={2} offsetTablet={0}>
+          <h1 className="mobile-cell"style={{ paddingTop: '70px' }}>Welcome!</h1>
           <h5 style={{ marginBottom: '50px' }}>
             Hello and welcome to my Personal Website! I am a full-stack software
             engineer currently living in the city of Chicago! I am available for
