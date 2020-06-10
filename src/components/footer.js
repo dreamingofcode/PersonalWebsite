@@ -125,6 +125,7 @@ const Footers = () => {
             <FooterLinkList>
               <a href="/">Home</a>
               <a href="/About">About</a>
+              <a href="/Portfolio">Portfolio</a>
               <a href="/Blog">Blog</a>
               <a href="/Algorithms">Algorithms</a>
               <a href="/Contact">Contact</a>

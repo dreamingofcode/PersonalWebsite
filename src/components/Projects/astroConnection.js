@@ -1,30 +1,30 @@
 import React from 'react';
 import { Grid, Cell } from 'react-mdl';
-import '../portfolio.css';
+import '../portfolio';
 
 import astroConnection from '../../assets/pictures/astroConnection.png';
 const AstroConnection = () => {
   return (
     <React.Fragment>
-      <Cell col={6} tablet={12} phone={12} shadow="10" className="about ">
+      <Cell col={6} tablet={12} phone={12} shadow="10" className="about">
         <h3>Astro-Connection</h3>
-        <div class="flip-card project-card">
+        <div class="flip-card">
           <div class="flip-card-inner">
-            <div className="flip-card-front ">
+            <div className="flip-card-front">
               <img 
-              className="img"
+              className="project-card"
                 src={astroConnection}
                 alt="Avatar"
-                
+                style={{ width: '513px', height: '200px' }}
               />
               <h5>
                 {' '}
                 A social-Networking expirience infused with zodiac compatibility
                 matching! Get your daily and general horoscope reading today!
-              </h5> 
+              </h5>
             </div>
-            <div class="flip-card-back project-card">              
-              <img    className="img" src="https://media.giphy.com/media/l0od7tThpTldB4whck/giphy.gif" alt="Astro-Connection Gif presentation" ></img>
+            <div class="flip-card-back">              
+              <img src="https://media.giphy.com/media/l0od7tThpTldB4whck/giphy.gif" alt="Astro-Connection Gif presentation" height="300px"></img>
 
             </div>
           </div>

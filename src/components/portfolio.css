@@ -1,110 +1,104 @@
 .flip-card {
-  background-color: transparent;
-  width: 512px;
-  height: 300px;
-  margin-left: 60px;
-  margin-top: 0px;
-  margin-bottom: 100px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
+    background-color: transparent;
+    width: 512px;
+    height: 300px;
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: white;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-/* Extra small devices (phones, 600px and down) */
+  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .cell {
-    margin-top: 150px;
+  .header {
+    display: none;
+  }
+ 
+  .card {
+    width: 100px;
   }
 
-  .project-card{
-    width: 370px;
-    height: 300px;
-    margin-bottom: 200px;
-  }
-  .img{
-    width: 362px;
-    height: 300px;
-  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
-  .cell {
+  .header {
+    display: none;
+  }
+   .mobile-cell{
     margin-top: 100px;
   }
-  .project-card{
-    width: fit-content;
-    height: fit-content;
-  }
-  img{
-    width: 260px;
-    height: 260px;
-  }
+ 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .project-card{
-    width: fit-content;
+  .card {
+    max-width: 600px;
   }
 
-  .cell {
+  .mobile-cell{
     margin-top: 100px;
-   
+    margin-bottom: ;
     /* padding-top: -200px; */
   }
+ 
+  
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .project-card{
-    width: fit-content;
+  .card {
+    max-width: 600px;
   }
+  
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .project-card{
-    width: 513px;
-     height: 200px;
+  .card {
+    max-width: 600px;
   }
+ 
 }
+
