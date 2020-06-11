@@ -71,13 +71,13 @@ const Footers = () => {
             </FooterDropDownSection>
             {/* </Cell>
           <Cell col={3} phone={4} tablet={4} offsetDesktop={6}> */}
-            <FooterDropDownSection title="Email">
+            {/* <FooterDropDownSection title="Email">
               <FooterLinkList>
                 <a href="mailto:cesarmota922@gmail.com" target="_blank">
                   <i class="fas fa-envelope-square fa-5x"></i>
                 </a>
               </FooterLinkList>
-            </FooterDropDownSection>
+            </FooterDropDownSection> */}
             <FooterDropDownSection
               title="Medium"
               style={{ marginRight: '00px' }}

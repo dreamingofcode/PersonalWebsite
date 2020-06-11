@@ -5,7 +5,7 @@ import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import me from '../../assets/pictures/me.jpg';
 import FadeIn from 'react-fade-in';
-import './about.css'
+import './about.css';
 var GifPlayer = require('react-gif-player');
 
 const About = () => {
@@ -13,61 +13,59 @@ const About = () => {
     <div>
       <FadeIn transitionDuration="1800">
         <Grid>
-          <Cell col={10} offsetDesktop={1}  phone={12} tablet={12}>
-            <div className="about-intro mobile-cell">
+          <Cell col={10} offsetDesktop={1} phone={12} tablet={12}>
+            <div className="about-intro">
               <h1 style={{ marginTop: '15px' }}>About Me!</h1>
-              <img
-              className="me"
-                src={me}
-                alt="Picture of me"
-               
-              />
-              <h4  className="initial-intro" >
-                One of my biggest aspirations in life is to find meaningful
-                work. I have an unquenchable thirst for opportunnities that will
-                allow me to obtain a sense of reassurance and fullfilment
-                through personal development and growth. I enjoy creative fields
-                and flourish in collaborative environments. My biggest desire in
-                life is to make an impact and to have a positive influence on
-                the world.
-              </h4>
+              <img className="me" src={me} alt="Picture of me" />
+              <Cell col={10} offsetDesktop={1} phone={12} tablet={12}>
+                <h4 className="initial-intro">
+                  One of my biggest aspirations in life is to find meaningful
+                  work. I have an unquenchable thirst for opportunnities that
+                  will allow me to obtain a sense of reassurance and fullfilment
+                  through personal development and growth. I enjoy creative
+                  fields and flourish in collaborative environments. My biggest
+                  desire in life is to make an impact and to have a positive
+                  influence on the world.
+                </h4>
+              </Cell>
             </div>
           </Cell>
-          <Cell  col={12} tablet={2} offsetTablet={1} phone={12} offsetPhone={0}>
-            <div className="mobile-language-icons" style={{ marginTop: '60px', }}>
+          <Cell col={12} tablet={2} offsetTablet={1} phone={12} offsetPhone={0}>
+            <div
+              className="mobile-language-icons"
+              style={{ marginTop: '60px' }}
+            >
               <i
                 class="fab fa-js-square fa-7x"
-                style={{ marginLeft: '100px',marginBottom:"40px" }}
+                style={{ marginLeft: '100px', marginBottom: '40px' }}
               ></i>
-              <i class="fab fa-react fa-7x" style={{ marginLeft: '100px',marginBottom:"40px"  }}></i>
-              <i class="fab fa-html5 fa-7x" style={{ marginLeft: '100px',marginBottom:"40px"  }}></i>
+              <i
+                class="fab fa-react fa-7x"
+                style={{ marginLeft: '100px', marginBottom: '40px' }}
+              ></i>
+              <i
+                class="fab fa-html5 fa-7x"
+                style={{ marginLeft: '100px', marginBottom: '40px' }}
+              ></i>
               <i
                 class="fab fa-css3-alt fa-7x"
-                style={{ marginLeft: '100px',marginBottom:"40px"  }}
+                style={{ marginLeft: '100px', marginBottom: '40px' }}
               ></i>
               <i class="fab fa-node fa-7x" style={{ marginLeft: '100px' }}></i>
             </div>{' '}
           </Cell>
           <Cell
-            offsetDesktop={0}
+            className="bio"
+            offsetDesktop={1}
             offsetPhone={0}
             shadow={12}
-            col={12}
+            col={10}
             tablet={12}
             phone={12}
-            style={{
-              marginTop: '80px',
-              // marginRight:"160px",
-              // marginLeft:"160px",
-              backgroundColor: '#8898b6',
-              width: "fit-content",
-              border: 'purple solid',
-            }}
           >
             <h1>Full-stack Software-Engineer</h1>
             <div style={{ marginLeft: '20px', marginRight: '20px' }}>
-              <h5>
-                {' '}
+              <h4>
                 My passion for software-engineering primarily began
                 approximatetly four years ago once I initially discovered that
                 the field was heavily dependent on collaboration and
@@ -80,9 +78,9 @@ const About = () => {
                 Associates Degree in Applied Science. My degree was fully geared
                 towards my transition into a computer science program and so the
                 majority of my focus was heavily mathematical and STEM related.
-              </h5>
+              </h4>
               <b />
-              <h5>
+              <h4>
                 {' '}
                 After many months of tireless research and consideration I made
                 the decision to attend a software-engineering bootcamp in order
@@ -95,9 +93,9 @@ const About = () => {
                 proficient understanding of object-oriented programing, MVC
                 models, optimization of data structures, asynchronous
                 mechanisms, and many other related programming concepts.
-              </h5>
+              </h4>
               <b />
-              <h5>
+              <h4>
                 {' '}
                 Currently, I have taken the initiative to broaden my
                 professional skills and gain more expirience by making myself
@@ -107,7 +105,7 @@ const About = () => {
                 taken a greater interest in Front end development and so
                 creating beautiful Design and vibrant webpages is a major
                 interest for me.
-              </h5>
+              </h4>
             </div>
           </Cell>
         </Grid>
@@ -182,18 +180,18 @@ const About = () => {
           </Cell>
 
           <Cell
-           shadow="10"
-           col={2}
-           tablet={12}
-           offsetTablet={2}
-           offsetPhone={1}
-           phone={12}
-           style={{
-             marginTop: '80px',
-             marginRight: '50px',
-             backgroundColor: '#8898b6',
-             border: 'purple solid',
-           }}
+            shadow="10"
+            col={2}
+            tablet={12}
+            offsetTablet={2}
+            offsetPhone={1}
+            phone={12}
+            style={{
+              marginTop: '80px',
+              marginRight: '50px',
+              backgroundColor: '#8898b6',
+              border: 'purple solid',
+            }}
           >
             <i
               class="fas fa-cloud-upload-alt fa-4x"
