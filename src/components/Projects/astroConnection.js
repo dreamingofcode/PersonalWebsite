@@ -91,7 +91,21 @@ const AstroConnection = () => {
           </Grid>{' '}
         </div>
         <Grid>
-          <Cell col={3} tablet={3}offsetTablet={1} offsetPhone={1} phone={12} style={{ marginTop: '-50px' }}>
+          <Cell col={6} tablet={12} phone={12}style={{ marginTop: '-50px',marginBottom:"30px" }}>
+            <h4 style={{textDecoration:"underline"}}>Features</h4>
+
+            <p style={{ marginTop: '-15px' }}>Daily Horoscope Reading</p>
+            <p style={{ marginTop: '-20px' }}>General Horsocope Reading</p>
+            <p style={{ marginTop: '-20px' }}>
+              Horoscope-match compatibipty calculator
+            </p>
+            <p style={{ marginTop: '-20px' }}>User Account</p>
+            <p style={{ marginTop: '-20px' }}>User Image upload</p>
+            <p style={{ marginTop: '-20px' }}>
+              Instant Messaging and Chat-rooms
+            </p>
+          </Cell>
+          <Cell col={3} tablet={3}offsetTablet={1} offsetPhone={0} phone={12} style={{ marginTop: '-50px' }}>
             <h4 style={{textDecoration:"underline"}}>Front-End</h4>
 
             <p style={{ marginTop: '-20px' }}>React.JS</p>
@@ -109,20 +123,6 @@ const AstroConnection = () => {
             <p style={{ marginTop: '-20px' }}>Cloudinary</p>
             <p style={{ marginTop: '-20px' }}>Express</p>
             <p style={{ marginTop: '-20px' ,marginBottom:"40px"}}>Node.JS</p>
-          </Cell>
-          <Cell col={6} tablet={12} phone={12}style={{ marginTop: '-50px' }}>
-            <h4 style={{textDecoration:"underline"}}>Features</h4>
-
-            <p style={{ marginTop: '-15px' }}>Daily Horoscope Reading</p>
-            <p style={{ marginTop: '-20px' }}>General Horsocope Reading</p>
-            <p style={{ marginTop: '-20px' }}>
-              Horoscope-match compatibipty calculator
-            </p>
-            <p style={{ marginTop: '-20px' }}>User Account</p>
-            <p style={{ marginTop: '-20px' }}>User Image upload</p>
-            <p style={{ marginTop: '-20px' }}>
-              Instant Messaging and Chat-rooms
-            </p>
           </Cell>
         </Grid>
       </Cell>
