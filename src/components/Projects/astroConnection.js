@@ -1,11 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import '../portfolio';
 
 import astroConnection from '../../assets/pictures/astroConnection.png';
-const AstroConnection = () => {
+export const AstroConnection = () => {
   const [videoPlayer, setVideoPlayer] = useState('none');
+  const [videoButton, setVideoButton] = useState('View Demo');
 
+  const [toggleDemoVideo, setToggleDemo] = useState(false);
+  // useEffect(() => {
+  //   let videoButton = 'View Demo';
+  //   console.log('puta', toggleDemoVideo);
+  //   toggleDemoVideo === true
+  //     ? (setVideoButton('Close Demo'))
+  //     : (setVideoButton('View Demo'));
+  // }, []);
+  const toggleVideo = () => {
+    setToggleDemo(!toggleDemoVideo);
+    toggleDemoVideo === true ? setVideoPlayer('flex') : setVideoPlayer('none');
+    toggleDemoVideo === true
+      ? setVideoButton('Close Demo')
+      : setVideoButton('View Demo');
+  };
   return (
     <React.Fragment>
       <Cell col={6} tablet={12} phone={12} shadow="10" className="about">
@@ -25,29 +41,30 @@ const AstroConnection = () => {
             <br />
             <button
               onClick={() => {
-                setVideoPlayer('flex');
+                toggleVideo();
               }}
             >
-              View Demo
+              {videoButton}
             </button>
             <a
               href="https://github.com/dreamingofcode/Astro-Connect"
               target="_blank"
             >
+          
+              <iframe
+                style={{ display: `${videoPlayer}`, marginLeft: '80px' }}
+                width="310"
+                height="315"
+                src="https://www.youtube.com/embed/leuY6ShOFBA?controls=0&amp;start=60"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
               <button>Github Repository</button>
             </a>
             <a href="https://astr-connection.herokuapp.com/" target="_blank">
               <button>Visit Website</button>
             </a>
-            <iframe
-              style={{  display: `${videoPlayer}`,marginLeft: '20px' }}
-              width="350"
-              height="315"
-              src="https://www.youtube.com/embed/leuY6ShOFBA?controls=0&amp;start=60"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            />
           </Cell>
         </div>
         <div class="flip-card project-card">
@@ -91,8 +108,13 @@ const AstroConnection = () => {
           </Grid>{' '}
         </div>
         <Grid>
-          <Cell col={6} tablet={12} phone={12}style={{ marginTop: '-50px',marginBottom:"30px" }}>
-            <h4 style={{textDecoration:"underline"}}>Features</h4>
+          <Cell
+            col={6}
+            tablet={12}
+            phone={12}
+            style={{ marginTop: '-50px', marginBottom: '30px' }}
+          >
+            <h4 style={{ textDecoration: 'underline' }}>Features</h4>
 
             <p style={{ marginTop: '-15px' }}>Daily Horoscope Reading</p>
             <p style={{ marginTop: '-20px' }}>General Horsocope Reading</p>
@@ -105,28 +127,36 @@ const AstroConnection = () => {
               Instant Messaging and Chat-rooms
             </p>
           </Cell>
-          <Cell col={3} tablet={3}offsetTablet={1} offsetPhone={0} phone={12} style={{ marginTop: '-50px' }}>
-            <h4 style={{textDecoration:"underline"}}>Front-End</h4>
+          <Cell
+            col={3}
+            tablet={3}
+            offsetTablet={1}
+            offsetPhone={0}
+            phone={12}
+            style={{ marginTop: '-50px' }}
+          >
+            <h4 style={{ textDecoration: 'underline' }}>Front-End</h4>
 
             <p style={{ marginTop: '-20px' }}>React.JS</p>
             <p style={{ marginTop: '-20px' }}>Redux & Hooks</p>
             <p style={{ marginTop: '-20px' }}>Bootstrap</p>
             <p style={{ marginTop: '-20px' }}>CSS</p>
             <p style={{ marginTop: '-20px' }}>HTML</p>
-            <p style={{ marginTop: '-20px',marginBottom:"40px" }}>Socket.IO</p>
+            <p style={{ marginTop: '-20px', marginBottom: '40px' }}>
+              Socket.IO
+            </p>
           </Cell>
           <Cell col={3} tablet={3} phone={12} style={{ marginTop: '-50px' }}>
-            <h4 style={{textDecoration:"underline"}}>Back-End</h4>
+            <h4 style={{ textDecoration: 'underline' }}>Back-End</h4>
 
             <p style={{ marginTop: '-20px' }}>Ruby on Rails</p>
             <p style={{ marginTop: '-20px' }}>PosgreSQL</p>
             <p style={{ marginTop: '-20px' }}>Cloudinary</p>
             <p style={{ marginTop: '-20px' }}>Express</p>
-            <p style={{ marginTop: '-20px' ,marginBottom:"40px"}}>Node.JS</p>
+            <p style={{ marginTop: '-20px', marginBottom: '40px' }}>Node.JS</p>
           </Cell>
         </Grid>
       </Cell>
     </React.Fragment>
   );
 };
-export default AstroConnection;

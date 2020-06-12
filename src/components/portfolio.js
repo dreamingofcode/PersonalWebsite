@@ -2,7 +2,7 @@ import React from 'react';
 import './portfolio.css';
 import { Grid, Cell } from 'react-mdl';
 import FadeIn from 'react-fade-in';
-import AstroConnection from './Projects/astroConnection';
+import {AstroConnection} from './Projects/astroConnection';
 import WatchList from './Projects/watchList';
 
 const Portfolio = () => {
