@@ -8,13 +8,7 @@ export const AstroConnection = () => {
   const [videoButton, setVideoButton] = useState('View Demo');
 
   const [toggleDemoVideo, setToggleDemo] = useState(false);
-  // useEffect(() => {
-  //   let videoButton = 'View Demo';
-  //   console.log('puta', toggleDemoVideo);
-  //   toggleDemoVideo === true
-  //     ? (setVideoButton('Close Demo'))
-  //     : (setVideoButton('View Demo'));
-  // }, []);
+
   const toggleVideo = () => {
     setToggleDemo(!toggleDemoVideo);
     toggleDemoVideo === true ? setVideoPlayer('flex') : setVideoPlayer('none');
@@ -24,7 +18,7 @@ export const AstroConnection = () => {
   };
   return (
     <React.Fragment>
-      <Cell col={6} tablet={12} phone={12} shadow="10" className="about">
+      <Cell shadow={10} col={6} tablet={12} phone={12} className="about">
         <h3>Astro-Connection</h3>
         <div className="mobile">
           <Cell tablet={12} phone={12}>
@@ -50,11 +44,10 @@ export const AstroConnection = () => {
               href="https://github.com/dreamingofcode/Astro-Connect"
               target="_blank"
             >
-          
               <iframe
                 style={{ display: `${videoPlayer}`, marginLeft: '80px' }}
-                width="310"
-                height="315"
+                width="fit-content"
+                height="fit-content"
                 src="https://www.youtube.com/embed/leuY6ShOFBA?controls=0&amp;start=60"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -114,7 +107,7 @@ export const AstroConnection = () => {
             phone={12}
             style={{ marginTop: '-50px', marginBottom: '30px' }}
           >
-            <h4 style={{ textDecoration: 'underline' }}>Features</h4>
+            <h4 className="underline">Features</h4>
 
             <p style={{ marginTop: '-15px' }}>Daily Horoscope Reading</p>
             <p style={{ marginTop: '-20px' }}>General Horsocope Reading</p>
@@ -135,7 +128,7 @@ export const AstroConnection = () => {
             phone={12}
             style={{ marginTop: '-50px' }}
           >
-            <h4 style={{ textDecoration: 'underline' }}>Front-End</h4>
+            <h4 className="underline">Front-End</h4>
 
             <p style={{ marginTop: '-20px' }}>React.JS</p>
             <p style={{ marginTop: '-20px' }}>Redux & Hooks</p>
@@ -147,7 +140,7 @@ export const AstroConnection = () => {
             </p>
           </Cell>
           <Cell col={3} tablet={3} phone={12} style={{ marginTop: '-50px' }}>
-            <h4 style={{ textDecoration: 'underline' }}>Back-End</h4>
+            <h4 className="underline">Back-End</h4>
 
             <p style={{ marginTop: '-20px' }}>Ruby on Rails</p>
             <p style={{ marginTop: '-20px' }}>PosgreSQL</p>

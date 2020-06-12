@@ -72,27 +72,26 @@ const About = () => {
                 problem-solving through creative thinking. I am intrigued by the
                 sophicatication and intricacy of the level of association and
                 networking that is required to build software and other
-                large-scale technologies. Initially, I planned to aquire a
-                bachelors in Computer Science, however, due to circumstances
-                outside of my immediate control, I was only able to aquire my
-                Associates Degree in Applied Science. My degree was fully geared
-                towards my transition into a computer science program and so the
-                majority of my focus was heavily mathematical and STEM related.
+                large-scale technologies. I aquired my Associates Degree in
+                Applied Science, fully geared towards my transition into a
+                computer science graduate program ,with a greater majority of
+                focus on mathematical and STEM related courses.
               </h4>
               <b />
               <h4>
                 {' '}
-                After many months of tireless research and consideration I made
-                the decision to attend a software-engineering bootcamp in order
-                to get a jumpstart in my carreer. I attended Flatiron Schools'
+                After many months of tireless research and consideration, I made
+                the decision to attend a software engineering bootcamp in order
+                to get a jumpstart in my carreer. I attended Flatiron School's
                 fully-immersive full-stack web development program at the
                 beginning of 2020 and graduated in the month of April. While in
-                this intense program I was able to realize my true potential in
-                becoming an independent scholar and also aquired the most ideal
-                foundational understanding about programming. I have aquired
-                proficient understanding of object-oriented programing, MVC
-                models, optimization of data structures, asynchronous
-                mechanisms, and many other related programming concepts.
+                this intense program I was able to realize my true potential and
+                capabilities in being an independent scholar as I 
+                aquired the most ideal foundational understanding about
+                programming. I have aquired proficient understanding of
+                object-oriented programing, MVC models, optimization of data
+                structures, asynchronous mechanisms, full deployments, mobile responsivity, Self-sufficiency, and many other related
+                programming concepts and soft skills.
               </h4>
               <b />
               <h4>
