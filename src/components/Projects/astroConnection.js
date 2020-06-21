@@ -21,7 +21,7 @@ export const AstroConnection = () => {
       <Cell shadow={10} col={6} tablet={12} phone={12} className="about">
         <h3>Astro-Connection</h3>
         <div className="mobile">
-          <Cell tablet={12} phone={12}>
+          <Cell col={12} tablet={12} phone={12}>
             <h5>
               A social-Networking expirience infused with zodiac compatibility
               matching! Get your daily and general horoscope reading today!
@@ -45,7 +45,7 @@ export const AstroConnection = () => {
               target="_blank"
             >
               <iframe
-                style={{ display: `${videoPlayer}`, marginLeft: '80px' }}
+                style={{ display: `${videoPlayer}` }}
                 width="fit-content"
                 height="fit-content"
                 src="https://www.youtube.com/embed/leuY6ShOFBA?controls=0&amp;start=60"
@@ -60,46 +60,74 @@ export const AstroConnection = () => {
             </a>
           </Cell>
         </div>
-        <div class="flip-card project-card">
-          <div class="flip-card-inner ">
-            <div className="flip-card-front ">
-              <img
-                src={astroConnection}
-                alt="Avatar"
-                style={{ width: '513px', height: '200px' }}
-              />
-              <h5>
-                {' '}
-                A social-Networking expirience infused with zodiac compatibility
-                matching! Get your daily and general horoscope reading today!
-              </h5>
+        <Cell
+          className="project-card"
+          col={12}
+          tablet={3}
+          offsetTablet={1}
+          phone={12}
+        >
+          <div className="flip-card cookie">
+            <div className="flip-card-inner ">
+              <div className="flip-card-front ">
+                <img
+                  src={astroConnection}
+                  alt="Avatar"
+                  style={{ width: '513px', height: '200px' }}
+                />
+                <h5>
+                  {' '}
+                  A social-Networking expirience infused with zodiac
+                  compatibility matching! Get your daily and general horoscope
+                  reading today!
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <img
+                  src="https://media.giphy.com/media/l0od7tThpTldB4whck/giphy.gif"
+                  alt="Astro-Connection Gif presentation"
+                  height="300px"
+                ></img>
+              </div>
             </div>
-            <div class="flip-card-back">
-              <img
-                src="https://media.giphy.com/media/l0od7tThpTldB4whck/giphy.gif"
-                alt="Astro-Connection Gif presentation"
-                height="300px"
-              ></img>
-            </div>
-          </div>
-          <Grid style={{ marginTop: '0px', marginLeft: '90px' }}>
-            <a
-              href="https://github.com/dreamingofcode/Astro-Connect"
-              target="_blank"
+            <Grid
+              style={{
+                marginTop: '0px',
+                marginLeft: '90px',
+                marginBottom: '25px',
+              }}
             >
-              <h5 style={{ marginRight: '50px', color: 'black' }}>Github</h5>
-            </a>
-            <a href="https://astr-connection.herokuapp.com/" target="_blank">
-              <h5 style={{ marginRight: '50px', color: 'black' }}>Heroku</h5>
-            </a>
-            <a
-              href="https://www.youtube.com/watch?v=leuY6ShOFBA&t=60s"
-              target="_blank"
-            >
-              <h5 style={{ marginRight: '50px', color: 'black' }}>Demo</h5>
-            </a>
-          </Grid>{' '}
-        </div>
+              <Cell col={4} offset={0} tablet={3} offsetTablet={0} phone={12}>
+                <a
+                  href="https://github.com/dreamingofcode/Astro-Connect"
+                  target="_blank"
+                >
+                  <h5 style={{ marginRight: '50px', color: 'black' }}>
+                    Github
+                  </h5>
+                </a>
+              </Cell>
+              <Cell col={4} tablet={2} phone={12}>
+                <a
+                  href="https://astr-connection.herokuapp.com/"
+                  target="_blank"
+                >
+                  <h5 style={{ marginRight: '50px', color: 'black' }}>
+                    Heroku
+                  </h5>
+                </a>
+              </Cell>{' '}
+              <Cell col={4} tablet={2} phone={12}>
+                <a
+                  href="https://www.youtube.com/watch?v=leuY6ShOFBA&t=60s"
+                  target="_blank"
+                >
+                  <h5 style={{ marginRight: '50px', color: 'black' }}>Demo</h5>
+                </a>
+              </Cell>
+            </Grid>{' '}
+          </div>{' '}
+        </Cell>
         <Grid>
           <Cell
             col={6}
@@ -141,7 +169,6 @@ export const AstroConnection = () => {
           </Cell>
           <Cell col={3} tablet={3} phone={12} style={{ marginTop: '-50px' }}>
             <h4 className="underline">Back-End</h4>
-
             <p style={{ marginTop: '-20px' }}>Ruby on Rails</p>
             <p style={{ marginTop: '-20px' }}>PosgreSQL</p>
             <p style={{ marginTop: '-20px' }}>Cloudinary</p>

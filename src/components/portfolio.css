@@ -81,6 +81,13 @@
   .mobile{
     margin-bottom: 100px;
   }
+  /* for project gif responsiveness */
+  .mobile-gif{
+    height: 330px;
+    width: 400px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
   .project-card{
     display: none;
   }
@@ -98,9 +105,17 @@
   }
  
   .mobile-gif{
-    display: none;
+    height: 330px;
+    width: 400px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
   .mobile{
+    margin-bottom: 100px;
+
+    display: inline-flex;
+  }
+  .project-card{
     display: none;
   }
 }
@@ -110,9 +125,19 @@
   .card {
     max-width: 600px;
   }
-  .mobile{
+  /* .mobile{
     display: none;
+  } */
+  .mobile-gif{
+ display: none;
   }
+  
+  .project-card{
+    display: inline-block;
+    /* margin-left: -10px; */
+  
+  }
+ 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -123,5 +148,9 @@
   .mobile{
     display: none;
   }
- 
+  .project-card{
+    display: inline-block;
+    /* margin-left: -10px; */
+  
+  }
 }

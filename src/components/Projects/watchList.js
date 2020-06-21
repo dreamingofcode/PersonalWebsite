@@ -18,11 +18,10 @@ const WatchList = () => {
       <Cell shadow={10} col={6} tablet={12} phone={12} className="about">
         <h3>Watch-List</h3>
         <div className="mobile">
-          <Cell tablet={12} phone={12}>
+          <Cell col={12} tablet={12} phone={12}>
             <h5>
-              A great tool to keep track of the movie titles you want to watch
-              and also movies you have already seen! You will never forget
-              another movie again!
+              A social-Networking expirience infused with zodiac compatibility
+              matching! Get your daily and general horoscope reading today!
             </h5>
             <img
               className="mobile-gif"
@@ -42,7 +41,7 @@ const WatchList = () => {
               href="https://github.com/dreamingofcode/Astro-Connect"
               target="_blank"
             >
-              <iframe
+               <iframe
                 style={{ display: `${videoPlayer}`, marginLeft: '80px' }}
                 width="fit-content"
                 height="fit-content"
@@ -53,55 +52,75 @@ const WatchList = () => {
               ></iframe>
               <button>Github Repository</button>
             </a>
+           
           </Cell>
         </div>
-        <div class="flip-card project-card">
-          <div class="flip-card-inner">
-            <div className="flip-card-front">
-              <img
-                className="img"
-                src={watchList}
-                alt="Avatar"
-                style={{ width: '513px', height: '200px' }}
-              />
-              <h5>
-                {' '}
-                A great tool to keep track of the movies you want to watch and
-                also movies you have already seen!
-              </h5>
+        <Cell
+          className="project-card"
+          col={12}
+          tablet={3}
+          offsetTablet={1}
+          phone={12}
+        >
+          <div className="flip-card ">
+            <div className="flip-card-inner ">
+              <div className="flip-card-front ">
+                <img
+                  src={watchList}
+                  alt="Avatar"
+                  style={{ width: '513px', height: '200px' }}
+                />
+                <h5>
+                  {' '}
+                  A great tool to keep track of the movies you want to watch and
+                  also movies you have already seen!
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <img
+                  alt="WatchList website GIF"
+                  src="https://media.giphy.com/media/cm0emWTfxAmqHeAFoR/giphy.gif"
+                  alt="Astro-Connection Gif presentation"
+                  height="300px"
+                ></img>
+              </div>
             </div>
-            <div class="flip-card-back">
-              <img
-                src="https://media.giphy.com/media/cm0emWTfxAmqHeAFoR/giphy.gif"
-                alt="WatchList website GIF"
-                height="300px"
-              ></img>
-            </div>
-          </div>
-          <Grid
-            style={{
-              marginTop: '-100px',
-              marginLeft: '160px',
-              marginBottom: '25px',
-            }}
-          >
-            <a
-              href="https://github.com/dreamingofcode/Astro-Connect"
-              target="_blank"
+            <Grid
+              style={{
+                marginTop: '0px',
+                marginLeft: '90px',
+                marginBottom: '25px',
+              }}
             >
-              <h5 style={{ marginRight: '187px', color: 'black' }}>Github</h5>
-            </a>
-            {/* <a href="https://astr-connection.herokuapp.com/" target="_blank">
-              <h5 style={{ marginRight: '50px', color: 'black' }}>Heroku</h5>
-            </a> */}
-            <a href="https://youtu.be/g3UhHl7c57s" target="_blank">
-              <h5 style={{ marginRight: '50px', color: 'black' }}>Demo</h5>
-            </a>
-          </Grid>{' '}
-        </div>
+              <Cell col={4} offset={0} tablet={3} offsetTablet={0} phone={12}>
+                <a
+                  href="https://github.com/dreamingofcode/Astro-Connect"
+                  target="_blank"
+                >
+                  <h5 style={{ marginRight: '50px', color: 'black' }}>
+                    Github
+                  </h5>
+                </a>
+              </Cell>
+          
+              <Cell col={4} tablet={2} phone={12}>
+                <a
+                href="https://youtu.be/g3UhHl7c57s" target="_blank"
+                >
+                  <h5 style={{ marginRight: '50px', color: 'black' }}>Demo</h5>
+                </a>
+              </Cell>
+            </Grid>{' '}
+          </div>{' '}
+        </Cell>
         <Grid>
-          <Cell col={6} tablet={12} phone={12} style={{ marginTop: '-50px' ,marginBottom: '30px'}}>
-            <h4 className="underline" >Features</h4>
+          <Cell
+            col={6}
+            tablet={12}
+            phone={12}
+            style={{ marginTop: '-50px', marginBottom: '30px' }}
+          >
+            <h4 className="underline">Features</h4>
 
             <p style={{ marginTop: '-20px' }}>User Account</p>
             <p style={{ marginTop: '-20px' }}>
@@ -116,8 +135,14 @@ const WatchList = () => {
               Share your watchlist with friends
             </p>
           </Cell>
-          <Cell col={3} tablet={3} phone={12}  offsetTablet={1}
-            offsetPhone={0} style={{ marginTop: '-50px' }}>
+          <Cell
+            col={3}
+            tablet={3}
+            phone={12}
+            offsetTablet={1}
+            offsetPhone={0}
+            style={{ marginTop: '-50px' }}
+          >
             <h4 className="underline">Front-End</h4>
 
             <p style={{ marginTop: '-20px' }}>Javascript</p>
@@ -125,7 +150,7 @@ const WatchList = () => {
             <p style={{ marginTop: '-20px' }}>CSS</p>
             <p style={{ marginTop: '-20px' }}>HTML</p>
           </Cell>
-          <Cell col={3} tablet={3} phone={12} style={{ marginTop: '-50px' }}>
+          <Cell col={3} tablet={4} phone={12} style={{ marginTop: '-50px' }}>
             <h4 className="underline">Back-End</h4>
             <p style={{ marginTop: '-20px' }}>Ruby on Rails</p>
             <p style={{ marginTop: '-20px' }}>PosgreSQL</p>
