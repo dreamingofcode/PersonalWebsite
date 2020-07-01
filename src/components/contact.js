@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div>
       <FadeIn transitionDuration="1800">
-        <h1>Contact Me!</h1>
+        <h1 className="initial">Contact Me!</h1>
         <Cell col={8} offsetDesktop={2} tablet={12} phone={12}>
           <h5 style={{ marginTop: '-10px', marginBottom: '80px' }}>
             You can Find hyperlinks to my social media accounts and my resume

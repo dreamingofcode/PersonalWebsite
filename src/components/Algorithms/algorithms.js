@@ -15,8 +15,8 @@ const Algorithms = () => {
         <Cell col={8} offsetDesktop={2} phone={12} tablet={12}>
           <h5 style={{ marginTop: '-10px', marginBottom: '80px' }}>
             For the sake of practice and optimal data structure design, I post
-            algorithms every friday afternoon! You can also view the source
-            code!
+            algorithms every week! You can also view the source
+            code on demand!!
           </h5>
         </Cell>
       
