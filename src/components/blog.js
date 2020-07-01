@@ -208,10 +208,10 @@ function Blog() {
                 </h4>
               </CardTitle>
               <CardText>
-                <h>
+                <h2>
                   Learn about one of the easiest methods available to creat
                   mobile responsive wbpa
-                </h>{' '}
+                </h2>{' '}
               </CardText>
               <CardActions border>
                 <a
