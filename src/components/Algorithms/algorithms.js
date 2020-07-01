@@ -19,6 +19,7 @@ const Algorithms = () => {
             code!
           </h5>
         </Cell>
+      
         <div className="about">
           <Grid>
             <Cell col={6} phone={12} tablet={12}>

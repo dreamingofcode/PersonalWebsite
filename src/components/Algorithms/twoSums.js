@@ -10,7 +10,7 @@ import {
   IconButton,
   Button,
 } from 'react-mdl';
-import twoSumSource from '../../assets/algorithms/2sum(n).png'
+import twoSumSource from '../../assets/algorithms/2sum(n).png';
 import SourceCodeModal from './sourceCode';
 
 const TwoSums = (props) => {
@@ -23,25 +23,24 @@ const TwoSums = (props) => {
     event.target.name === 'array' ? setArray(input) : setTargetSum(input);
   };
   const handleChangeForm = (event) => {
-    props.setSourceCodeTitle("Two Sums")
-    props.setSourceImage(twoSumSource)
+    props.setSourceCodeTitle('Two Sums');
+    props.setSourceImage(twoSumSource);
   };
   //start with first number on the array, check if the sum adds up to sum total, if no, check the second number and so forth until done looping
 
   const handleTwoSums = (event, array, targetSum) => {
     event.preventDefault();
     const nums = {};
-    const answer=[]
+    const answer = [];
     for (let i = 0; array.length > i; i++) {
       const match = targetSum - array[i];
       if (match in nums) {
-        answer.push([match, parseInt(array[i])] )
+        answer.push([match, parseInt(array[i])]);
       } else {
-        nums[array[i]] = false;  
-         
+        nums[array[i]] = false;
       }
     }
-    setResult( '['+ `${answer[0]}`+ ']' +','+ '['+ answer[1]+']');
+    setResult('[' + `${answer[0]}` + ']' + ',' + '[' + answer[1] + ']');
     return [];
   };
   return (
@@ -51,7 +50,7 @@ const TwoSums = (props) => {
           <Card
             shadow={10}
             style={{
-               width: 'fit-content',
+              width: 'fit-content',
               margin: 'auto',
               marginBottom: '100px',
             }}
@@ -74,7 +73,7 @@ const TwoSums = (props) => {
                 negative, and a desired target sum and will check for pairs
                 which will generate the sum.
               </p>
-          
+
               <form
                 onSubmit={(event) => {
                   handleTwoSums(event, array, targetSum);
@@ -98,10 +97,15 @@ const TwoSums = (props) => {
 
                 <input type="submit"></input>
               </form>
-             <h4>{result}</h4> 
+              <h4>{result}</h4>
             </CardText>
             <CardActions>
-              <SourceCodeModal  source={props.sourceImage} title={props.sourceCodeTitle}/>
+              <div className="modal">
+                <SourceCodeModal
+                  source={props.sourceImage}
+                  title={props.sourceCodeTitle}
+                />
+              </div>{' '}
             </CardActions>
           </Card>
         </Cell>

@@ -101,7 +101,9 @@ const ValidateSubsequence = (props) => {
               <h4>{result}</h4>
             </CardText>
             <CardActions>
+            <div className="modal">
               <SourceCodeModal source={props.sourceImage} title={props.sourceCodeTitle}/>
+            </div>
             </CardActions>
           </Card>
         </Cell>
