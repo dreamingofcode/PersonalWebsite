@@ -138,11 +138,11 @@ const Travelly = () => {
             <p style={{ marginTop: '-20px' }}>CSS</p>
             <p style={{ marginTop: '-20px' }}>HTML</p>
           </Cell>
-          <Cell col={3} tablet={4} phone={12} style={{ marginTop: '-50px' }}>
+          {/* <Cell col={3} tablet={4} phone={12} style={{ marginTop: '-50px' }}>
             <h4 className="underline">Back-End</h4>
             <p style={{ marginTop: '-20px' }}>under construction</p>
           
-          </Cell>
+          </Cell> */}
         </Grid>
       </Cell>
     </React.Fragment>
