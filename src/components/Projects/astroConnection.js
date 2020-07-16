@@ -113,7 +113,7 @@ export const AstroConnection = () => {
                   target="_blank"
                 >
                   <h5 style={{ marginRight: '50px', color: 'black' }}>
-                    Heroku
+                    Site
                   </h5>
                 </a>
               </Cell>{' '}
