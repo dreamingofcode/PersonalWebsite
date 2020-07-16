@@ -60,7 +60,7 @@ const Contact = () => {
             phone={12}
             tablet={12}
           >
-            <form method="POST" name="contact">
+            <form  method="POST" name="contact">
               <h3>Contact Form</h3>
               <input type="hidden" name="form-name" value="contact" />
               <div className="fields">

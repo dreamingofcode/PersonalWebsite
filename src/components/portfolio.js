@@ -4,6 +4,7 @@ import { Grid, Cell } from 'react-mdl';
 import FadeIn from 'react-fade-in';
 import {AstroConnection} from './Projects/astroConnection';
 import WatchList from './Projects/watchList';
+import Travelly from './Projects/travelly'
 
 const Portfolio = () => {
   return (
@@ -15,6 +16,7 @@ const Portfolio = () => {
         </div>
         <Grid>
           <AstroConnection />
+          <Travelly/>
           <WatchList />
         </Grid>
       </FadeIn>

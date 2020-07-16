@@ -66,15 +66,14 @@ const About = () => {
             <h1>Full-stack Software-Engineer</h1>
             <div style={{ marginLeft: '20px', marginRight: '20px' }}>
               <h4>
-                My passion for software-engineering primarily began
+                My pursuit for a career in software-engineering primarily began
                 approximatetly four years ago once I initially discovered that
                 the field was heavily dependent on collaboration and
-                problem-solving through creative thinking. I am intrigued by the
-                sophicatication and intricacy of the level of association and
-                networking that is required to build software and other
-                large-scale technologies. I aquired my Associates Degree in
+                problem-solving through creative thinking. Driven by the 
+                passion of collaborating to creating beautiful, efficient, powerful, and impactful products.
+                I aquired my Associates Degree in
                 Applied Science, fully geared towards my transition into a
-                computer science graduate program ,with a greater majority of
+                computer science graduate program ,with a 
                 focus on mathematical and STEM related courses.
               </h4>
               <b />
