@@ -6,6 +6,7 @@ const Travelly = () => {
   const [videoPlayer, setVideoPlayer] = useState('none');
   const [videoButton, setVideoButton] = useState('View Demo');
   const [toggleDemoVideo, setToggleDemo] = useState(false);
+
   const toggleVideo = () => {
     setToggleDemo(!toggleDemoVideo);
     toggleDemoVideo === true ? setVideoPlayer('flex') : setVideoPlayer('none');
@@ -20,7 +21,9 @@ const Travelly = () => {
         <div className="mobile">
           <Cell col={12} tablet={12} phone={12}>
             <h5>
-              All your travel needs in one place! Search for flights and hotels along with our trip calculator to book the perfect trip based on your budget!
+              All your travel needs in one place! Search for flights and hotels
+              along with our trip calculator to book the perfect trip based on
+              your budget!
             </h5>
             <img
               className="mobile-gif"
@@ -40,10 +43,8 @@ const Travelly = () => {
               href="https://github.com/dreamingofcode/Travelly"
               target="_blank"
             >
-              
               <button>Github Repository</button>
             </a>
-           
           </Cell>
         </div>
         <Cell
@@ -63,7 +64,7 @@ const Travelly = () => {
                 />
                 <h5>
                   {' '}
-                 Book the perfect trip at the lowest price ever! Use our trip calculator to find awesome trips based on your budget!
+                  Book the perfect trip at the lowest price ever! Browse through flights and compare prices instantly!
                 </h5>
               </div>
               <div class="flip-card-back">
@@ -92,15 +93,13 @@ const Travelly = () => {
                   </h5>
                 </a>
               </Cell>
-          
+
               <Cell col={4} offset={0} tablet={3} offsetTablet={0} phone={12}>
                 <a
                   href="https://nifty-lovelace-779ccb.netlify.app/"
                   target="_blank"
                 >
-                  <h5 style={{ marginRight: '50px', color: 'black' }}>
-                    Site
-                  </h5>
+                  <h5 style={{ marginRight: '50px', color: 'black' }}>Site</h5>
                 </a>
               </Cell>
             </Grid>{' '}
@@ -115,15 +114,10 @@ const Travelly = () => {
           >
             <h4 className="underline">Features</h4>
 
-            <p style={{ marginTop: '-20px' }}>Trip calculator</p>
-            <p style={{ marginTop: '-20px' }}>
-             Browse through flights
-            </p>
-            <p style={{ marginTop: '-20px' }}>
-       Browse through hotels
-            </p>
+            <p style={{ marginTop: '-20px' }}>User Account CRUD actions</p>
+            <p style={{ marginTop: '-20px' }}>Dynamically browse flights</p>
+            <p style={{ marginTop: '-20px' }}>View departure and return flights</p>
             <p style={{ marginTop: '-20px' }}>Book the perfect trip</p>
-         
           </Cell>
           <Cell
             col={3}
@@ -137,12 +131,18 @@ const Travelly = () => {
 
             <p style={{ marginTop: '-20px' }}>CSS</p>
             <p style={{ marginTop: '-20px' }}>HTML</p>
+            <p style={{ marginTop: '-20px' }}>React</p>
+            <p style={{ marginTop: '-20px' }}>React Hooks</p>
+            <p style={{ marginTop: '-20px' }}>React Redux</p>
+            <p style={{ marginTop: '-20px' }}>Bootstrap</p>
           </Cell>
-          {/* <Cell col={3} tablet={4} phone={12} style={{ marginTop: '-50px' }}>
+          <Cell col={3} tablet={4} phone={12} style={{ marginTop: '-50px' }}>
             <h4 className="underline">Back-End</h4>
-            <p style={{ marginTop: '-20px' }}>under construction</p>
+            <p style={{ marginTop: '-20px' }}>Ruby on Rails</p>
+            <p style={{ marginTop: '-20px' }}>mySQL</p>
+            <p style={{ marginTop: '-20px' }}>Skyscanner External API</p>
           
-          </Cell> */}
+          </Cell>
         </Grid>
       </Cell>
     </React.Fragment>
