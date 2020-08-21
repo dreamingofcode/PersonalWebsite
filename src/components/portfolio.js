@@ -15,8 +15,8 @@ const Portfolio = () => {
           
         </div>
         <Grid>
-          <AstroConnection />
           <Travelly/>
+          <AstroConnection />
           <WatchList />
         </Grid>
       </FadeIn>

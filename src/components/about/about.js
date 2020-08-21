@@ -18,7 +18,7 @@ const About = () => {
               <h1 style={{ marginTop: '15px' }}>About Me!</h1>
               <img className="me" src={me} alt="Picture of me" />
               <Cell col={10} offsetDesktop={1} phone={12} tablet={12}>
-                <h4 className="initial-intro">
+                {/* <h4 className="initial-intro">
                   One of my biggest aspirations in life is to find meaningful
                   work. I have an unquenchable thirst for opportunnities that
                   will allow me to obtain a sense of reassurance and fullfilment
@@ -26,34 +26,33 @@ const About = () => {
                   fields and flourish in collaborative environments. My biggest
                   desire in life is to make an impact and to have a positive
                   influence on the world.
-                </h4>
+                </h4> */}
+                <div
+                  className="mobile-language-icons"
+                  style={{ marginTop: '60px' }}
+                >
+                  <i
+                    class="fab fa-js-square fa-7x"
+                    style={{ marginLeft: '100px', marginBottom: '40px' }}
+                  ></i>
+                  <i
+                    class="fab fa-react fa-7x"
+                    style={{ marginLeft: '100px', marginBottom: '40px' }}
+                  ></i>
+                  <i
+                    class="fab fa-html5 fa-7x"
+                    style={{ marginLeft: '100px', marginBottom: '40px' }}
+                  ></i>
+                  <i
+                    class="fab fa-css3-alt fa-7x"
+                    style={{ marginLeft: '100px', marginBottom: '40px' }}
+                  ></i>
+                  {/* <i class="fab fa-node fa-7x" style={{ marginLeft: '100px' }}></i> */}
+                </div>{' '}
               </Cell>
             </div>
           </Cell>
-          <Cell col={12} tablet={2} offsetTablet={1} phone={12} offsetPhone={0}>
-            <div
-              className="mobile-language-icons"
-              style={{ marginTop: '60px' }}
-            >
-              <i
-                class="fab fa-js-square fa-7x"
-                style={{ marginLeft: '100px', marginBottom: '40px' }}
-              ></i>
-              <i
-                class="fab fa-react fa-7x"
-                style={{ marginLeft: '100px', marginBottom: '40px' }}
-              ></i>
-              <i
-                class="fab fa-html5 fa-7x"
-                style={{ marginLeft: '100px', marginBottom: '40px' }}
-              ></i>
-              <i
-                class="fab fa-css3-alt fa-7x"
-                style={{ marginLeft: '100px', marginBottom: '40px' }}
-              ></i>
-              <i class="fab fa-node fa-7x" style={{ marginLeft: '100px' }}></i>
-            </div>{' '}
-          </Cell>
+
           <Cell
             className="bio"
             offsetDesktop={1}
@@ -66,43 +65,22 @@ const About = () => {
             <h1>Full-stack Software-Engineer</h1>
             <div style={{ marginLeft: '20px', marginRight: '20px' }}>
               <h4>
-                My pursuit for a career in software-engineering primarily began
-                approximatetly four years ago once I initially discovered that
-                the field was heavily dependent on collaboration and
-                problem-solving through creative thinking. Driven by the 
-                passion of collaborating to creating beautiful, efficient, powerful, and impactful products.
-                I aquired my Associates Degree in
-                Applied Science, fully geared towards my transition into a
-                computer science graduate program ,with a 
-                focus on mathematical and STEM related courses.
-              </h4>
-              <b />
-              <h4>
-                {' '}
-                After many months of tireless research and consideration, I made
-                the decision to attend a software engineering bootcamp in order
-                to get a jumpstart in my carreer. I attended Flatiron School's
-                fully-immersive full-stack web development program at the
-                beginning of 2020 and graduated in the month of April. While in
-                this intense program I was able to realize my true potential and
-                capabilities in being an independent scholar as I 
-                aquired the most ideal foundational understanding about
-                programming. I have aquired proficient understanding of
-                object-oriented programing, MVC models, optimization of data
-                structures, asynchronous mechanisms, full deployments, mobile responsivity, Self-sufficiency, and many other related
-                programming concepts and soft skills.
-              </h4>
-              <b />
-              <h4>
-                {' '}
-                Currently, I have taken the initiative to broaden my
-                professional skills and gain more expirience by making myself
-                available to freelance work and personal projects. I am also
-                enrolled in various certification programs in MEAN stack and
-                Advanced Web Design. After approaching multiple projects, I have
-                taken a greater interest in Front end development and so
-                creating beautiful Design and vibrant webpages is a major
-                interest for me.
+                With about a little over a year's worth of experience in web
+                development, I have experience with Object-oriented programming,
+                CRUD functions, data-structures, DOM manipulation and life
+                cycles, asynchronous processes, RESTful APIs, MVC structures,
+                GIT, error-handling, and many more concepts. My tech stack
+                includes: Ruby On Rails, SQL, Sinatra, Express, NodeJS,
+                Javascript, HTML, CSS, and ReactJS. I have experience in
+                developing both front-end solutions as well as back-end API’s
+                and servers. I have experience launching multiple webpages on
+                cloud infrastructures and also implementing mobile
+                responsiveness.
+                <br /> I am highly driven, optimistic, empathetic,
+                collaborative, and persistent. Currently I spend my time developing my portfolio and
+                learning new technologies through online courses. I seek valuable connections and opportunities thay offer me the potential for
+                growth and expansion in order to carry myself into the next
+                phase of my career as a professional .
               </h4>
             </div>
           </Cell>
