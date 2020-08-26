@@ -96,7 +96,7 @@ const Travelly = () => {
 
               <Cell col={4} offset={0} tablet={3} offsetTablet={0} phone={12}>
                 <a
-                  href="https://nifty-lovelace-779ccb.netlify.app/"
+                  href="https://nervous-lovelace-0d5b8e.netlify.app/"
                   target="_blank"
                 >
                   <h5 style={{ marginRight: '50px', color: 'black' }}>Site</h5>
